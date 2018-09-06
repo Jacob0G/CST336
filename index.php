@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+    <?php
+    ?>
     <head>
         <title> Jacob Gulls CST336</title>
     </head>
