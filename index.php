@@ -4,6 +4,7 @@
 // Press the 'Run' button on the top to start the web server,
 // then click the URL that is emitted to the Output tab of the console
 echo "<h1>Jacob Gull's CST336<h1>";
+echo "<a href = 'Labs/Lab1/portfolio/index.html'>Lab1</a>";
 ?>
 </body>
 </html>
