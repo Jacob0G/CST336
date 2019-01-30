@@ -57,3 +57,8 @@ ul {
     color: yellow;    
 }
 /*Contact page style*/
+iframe {
+    margin-left: 300px;
+    width: 640px;
+    height: 1011px;
+}
