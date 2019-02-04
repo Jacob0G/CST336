@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  
+  <style>
+    
+     body {
+       background-color: #000006 !important;
+       color: yellow;
+       font-family: "Brush Script MT",cursive;
+
+          }
+    .head {
+    font-family: "Brush Script MT",cursive;
+    text-align: center;
+    }
+    
+    
+    #row1 {
+     
+      display:flex;
+      justify-content:center;
+      color:white;
+      text-align:center
+    }
+    #row2{
+     
+      display:flex;
+      justify-content:center;
+      color:white;
+      text-align:center
+    }
+    #summer {
+  border-radius: 0 25px 0 0;
+  background: #73AD21;
+   
+  width: 200px;
+  height: 150px; 
+}
+#fall{
+  border-radius: 0 0 0 25px;
+  background: #73AD21;
+ 
+  width: 200px;
+  height: 150px; 
+}
+#spring {
+  border-radius: 25px 0 0 0;
+  background: #73AD21;
+  
+  width: 200px;
+  height: 150px; 
+}
+#winter {
+  border-radius:0 0 25px 0;
+  background: #73AD21;
+  
+  width: 200px;
+  height: 150px; 
+}
+#line {
+padding-left: 20px;
+padding-right: 20px;
+border:solid 1px white;
+}
+
+
+    
+  </style>
+  <header>
+    <h1 class="head">Seasons</h1>
+  </header>
+</head>
+<body>
+  
+<div id="row1">
+  
+  <div class="cell">
+    <img id = "spring" src="img/spring.png" alt="Spring"/>
+    <br>Spring</br>
+   
+  </div>
+  <div class="cell">
+    <img id= "summer" src="img/summer.png" alt="Summer"/>
+    <br>Summer</br>
+  
+  </div>
+  
+  </div>
+<div id="row2">
+  <div class="cell">
+    <hr id="line"></hr>
+    <img id = "fall" src="img/fall.png" alt="Fall"/>
+    <br>Fall</br>
+  
+  </div>
+  
+  <div class="cell">
+    <hr id="line"></hr>
+    <img id = "winter" src="img/winter.jpg" alt="Winter"/>
+   
+    <br>Winter</br>
+
+  </div>
+  
+</div>
+</body>
+</html>
