@@ -1,10 +1,11 @@
 body {
     background-color:black;
-    color:gray;
+    color:white;
 }
 #me {
   margin: auto;
-  width: 25%;
+  text-align: center;
+  justify-content:center;
   /*border: 3px solid green;*/
 }
 #img_source {
@@ -12,6 +13,7 @@ body {
   width: 50%;
   padding-bottom: 10px;
 }
+
 #about_text {
     text-align: center;
     padding-left: 150px;
