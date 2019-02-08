@@ -1,14 +1,15 @@
     // Your JavaScript goes here
             var randomNumber =  Math.floor(Math.random()*99)+1;
-            var guesses = document.querySelector("#guesses");
-            var lastResult = document.querySelector("#lastResult");
-            var lowOrHi = document.querySelector("#lowOrHi");
+            var guesses = $("#guesses");
+            // var lastResult = document.querySelector("#lastResult");
+            var lastResult = $("#lastResult");
+            var lowOrHi = $("#lowOrHi");
             
-            var guessSubmit = document.querySelector(".guessSubmit");
-            var guessField = document.querySelector(".guessField");
+            var guessSubmit = $(".guessSubmit");
+            var guessField = $(".guessField");
             
             var guessCount = 1;
-            var resetButton = document.querySelector("#reset");
+            var resetButton = $("#reset");
             resetButton.style.display = "none";
             var resetButton;
             guessField.focus();
@@ -16,25 +17,25 @@
             function checkGuess() {
                 var userGuess = Number(guessField.value);
                 if (guessCount === 1) {
-                    guesses.innerHTML = "Previous guesses: ";
+                    guesses.HTML = "Previous guesses: ";
                 }
-                guesses.innerHTML += userGuess + " ";
+                guesses.HTML += userGuess + " ";
                 
                 if(userGuess === randomNumber) {
-                    lastResult.innerHTML = "Congratulations! you got it right!";
+                    lastResult.HTML = "Congratulations! you got it right!";
                     lastResult.style.backgroundColor = "green";
-                    lowOrHi.innerHTML = "";
+                    lowOrHi.HTML = "";
                     setGameOver();
                 } else if (guessCount === 7) {
-                        lastResult.innerHTML = "Sorry, you lost!";
+                        lastResult.HTML = "Sorry, you lost!";
                         setGameOver()
                 } else {
-                        lastResult.innerHTML = "Wrong!";
+                        lastResult.HTML = "Wrong!";
                         lastResult.style.backgroundColor = "red";
                     if(userGuess < randomNumber) {
-                            lowOrHi.innerHTML = "Last guess was too low!";
+                            lowOrHi.HTML = "Last guess was too low!";
                     } else if(userGuess > randomNumber) {
-                            lowOrHi.innerHTML = "Last guess was too high!";
+                            lowOrHi.HTML = "Last guess was too high!";
                       }
                     }
                     
@@ -54,7 +55,7 @@
         function resetGame() {
             guessCount = 1;
             
-            var resetParas = document.querySelectorAll(".resultParas p");
+            var resetParas = $(".resultParas p");
             for (var i = 0 ; i < resetParas.length ; i++) {
                 resetParas[i].textContent = "";
             }
