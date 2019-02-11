@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+}
+header {
+    margin: 0px;
+}
+a {
+  color: #4c6b83;
+}
+#top {
+    padding: 25px;
+    background-color: #002a4e;
+    color: white;
+    font-size:50px;
+}
+#text{
+    margin-left:20px;
+    text-align:left;
+}
+#csumb_content{
+    margin-left: 25px;
+    font-weight: 300;
+    font-size:25px;
+}
+#sub_content{
+    padding-left: 25px;
+    font-size: 33px;
+    margin-bottom: 0.4em;
+}
+#title {
+     margin-left:20px;
+     text-align:left;
+}
+#row_column {
+    margin-left: 15px;
+    text-align: center;
+    display:flex;
+}
+#cell{
+    padding-left:15px;
+    padding-right:25px;
+    display: inline;
+    font-size:20px;
+    font-weight: 500;
+}
+#minor {
+    margin-left:20px;
+    text-align:left;
+    font-size:20px;
+}
