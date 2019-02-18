@@ -1,0 +1,35 @@
+body{
+    margin:0px;
+    text-align: center;
+}
+#head{
+    color:white;
+    background-color: grey;
+    padding-top: 5px;
+    padding-bottom:5px;
+}
+
+#playBtn{
+    
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+}
+#wrapper{
+    display:flex;
+    Justify-content:center;
+}
+#winner{
+    font-size: 60px;
+    
+}
+#feedback{
+    font-size: 40px;
+}

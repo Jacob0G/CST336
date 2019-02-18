@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>US Geography Quiz</title>
+        <script src="https://code.jquery.com/jquery.min.js"></script>   
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        
+        <h1 id="title" >US Geography Quiz</h1>
+
+        <br><br>
+        <h2>What is the capital of California?</h2>
+        <input id="q1" type = "text">
+        <div id="q1_feedback"></div>
+        
+        <h2>What is the longest US River?</h2>
+        <select id = q2>
+            <option value=""></option>
+            <option value="Missisipi River">Missisipi River</option>
+            <option value="Colorado River">Colorado River</option>
+            <option value="Hudson River">Hudson River</option>
+            <option value="Missouri River">Missouri River</option>
+        </select>
+        <div id="q2_feedback"></div>
+        
+        <h2>What is the smallest US State?</h2>
+        <input type="radio" name="q3" value = "Maine"><label for="Maine"</label>Maine
+        <input type="radio" name="q3" value = "Rhode Island"><label for="Rhode Island"</label>Rhode Island
+        <input type="radio" name="q3" value = "Maryland"><label for="Maryland"</label>Maryland
+        <input type="radio" name="q3" value = "Maine"><label for="Maine"</label>Delaware
+        <div id="q3_feedback"></div>
+        
+        <h2>What presidents are carved into Mount Rushmore?</h2>
+        <input type="checkbox" id="Jackson"   value = "A.Jackson">A.Jackson
+        <input type="checkbox" id="Franklin"  value = "B.Franklin">B.Franklin
+        <input type="checkbox" id="Jefferson" value = "T.Jefferson">T.Jefferson
+        <input type="checkbox" id="Roosevelt" value = "T.Roosevelt">T.Roosevelt
+        <div id="q4_feedback"></div>
+        
+        <br>
+        <h2>What image is the offical California Seal?</h2>
+        <img src="img/seal1.png" alt="seal 1" class="active" id="seal1">
+        <img src="img/seal2.png" alt="seal 2" class="active" id="seal2">
+        <img src="img/seal3.png" alt="seal 3" class="active" id="seal3">
+        <div id="q5_feedback"></div>
+
+        <h3 id="totalScore"></h3>
+        <Button id="submitBtn">Submit</Button>
+        <h2 id=timesTaken></h2>
+        
+        <script>
+            
+            let q1_value = 20;
+            let q2_value = 20;
+            let q3_value = 20;
+            let q4_value = 20;
+            let q5_value = 20;
+            
+            let q1_ans = "sacramento";
+            let q2_ans = "Missouri River";
+            let q3_ans = "Rhode Island";
+            let q5_ans = "seal2";
+            
+            let q5_response = "";
+            
+            $(".active").on("click", function() {
+                $(".active").css("background","");
+                $(this).css("background","yellow");
+                q5_response = $(this).attr("id");
+            });
+
+            let total_points = 0;
+            let counter = localStorage.getItem("counter");
+            
+            funciton isFormValid(){
+                let isValid = true;
+                
+                if($("#q1").val() == ""){
+                    isValid = false;
+                    alert(isValid);
+                }
+                
+                
+                return isValid;
+            }
+            
+            
+            
+            $("#submitBtn").on("click", function() {
+                
+                if(isFormValid()){
+                    return;
+                }
+                
+                
+                //Question 1
+                let q1_response = $("#q1").val().toLowerCase();
+                if(q1_response == q1_ans){
+                    $("#q1_feedback").html("Correct!");
+                    total_points += q1_value;
+                } else {
+                    $("#q1_feedback").html("Incorrect!");
+                }
+                
+                //Question 2
+                let q2_response = $("#q2").val();
+                if(q2_response == q2_ans){
+                    $("#q2_feedback").html("Correct!");
+                    total_points += q2_value;
+                } else {
+                    $("#q2_feedback").html("Incorrect!");
+                }
+                
+                 //Question 3
+                let q3_response = $("input[name=q3]:checked").val();
+                if(q3_response == q3_ans){
+                    $("#q3_feedback").html("Correct!");
+                    total_points += q3_value;
+                } else {
+                    $("#q3_feedback").html("Incorrect!");
+                }
+                
+                //Question 4
+                if($('#Jefferson').is(':checked') && $('#Roosevelt').is(':checked') && $('#Jackson').is(':checked') == false && $('#Franklin').is(':checked') == false){
+                    $("#q4_feedback").html("Correct!");
+                    total_points += q4_value;
+                } else {
+                    $("#q4_feedback").html("Incorrect!");
+                }
+                
+                //Question 5
+                if(q5_response == q5_ans){
+                    $("#q5_feedback").html("Correct!");
+                    total_points += q5_value;
+                } else {
+                    $("#q5_feedback").html("Incorrect!");
+                }
+                
+                $("#totalScore").html("The total Score is: "+ total_points);
+                total_points = 0;
+                counter++;
+                localStorage.setItem("counter",counter);
+                
+                $("#timesTaken").html("Survey taken: " + counter + " times.");
+            });
+        </script>
+    </body>
+</html>

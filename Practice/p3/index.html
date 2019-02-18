@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Practice 3</title>
+        <script src="https://code.jquery.com/jquery.min.js"></script>   
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+    </head>
+    <div id="head">
+    <h1> Slot Machine </h1>
+    </div>
+    <body>
+    <button id="playBtn">Play!</button>
+    <div id="wrapper">
+    <div id="image1"></div>
+    <div id="imgTitle"></div>
+    <div id ="image2"></div>
+    <div id="image3"></div>
+    </div>
+    <h1 id ="winner">
+    </h1>
+    <h2 id="feedback"></h2>
+   <audio id="controls"></audio>
+    
+    <script>
+        /* global $ */
+        let total = 0;
+        let imageArray = ["cherry", "grapes","seven"];
+        let winningArray = [100, 300, 500];
+        let randomImage;
+
+
+         $("#playBtn").on("click", function() {
+             
+            let randomIndex1 = Math.floor(Math.random()*3);
+            let randomIndex2 = Math.floor(Math.random()*3);
+            let randomIndex3 = Math.floor(Math.random()*3);
+            
+            randomImage = imageArray[randomIndex1];
+            $("#image1").html("<img src= 'img/" + randomImage+ ".png' />");
+            
+            randomImage = imageArray[randomIndex2];
+            $("#image2").html("<img src= 'img/" + randomImage+ ".png' />");
+            
+            randomImage = imageArray[randomIndex3];
+            $("#image3").html("<img src= 'img/" + randomImage+ ".png' />");
+            
+            if(randomIndex1 === randomIndex2 && randomIndex1 === randomIndex3 && randomIndex2 === randomIndex3){
+
+                if(randomIndex1 === 0){
+                    $("#winner").html("You won!");
+                    total+=winningArray[0];
+                }
+                if(randomIndex2 === 1){
+                    $("#winner").html("You won!");
+                    total+=winningArray[1];
+                }
+                if(randomIndex3 === 2){
+                    $("#winner").html("JACKPOT!");
+                    total+=winningArray[2];
+                    let audio = new Audio('audio/jackpot.m4a');
+                    audio.play();
+                }
+                $("#feedback").html("Total Winnings: $"+ total);
+            }
+            else{
+                $("#winner").html("Try Again!");
+                $("#feedback").html("Total Winnings: $" + total);
+            }
+        });
+        
+    </script>
+    </body>
+    
+    
+    <footer>
+        <hr>
+        CST 336 Internet Programming 2019&copy; Jacob Gull <br/>
+        <strong>Disclaimer:</strong> The information in this webpage is fictitous. <br/>
+        It is used for academic purposes only.
+        <br />
+        <img src= "../../img/csumb.png" alt="CSUMB logo" Title="CSUMB Logo"/>
+        <img src= "../../img/buddy_verified.png" alt="BUDDY_VERIFIED" Title="buddy verified"/>
+    </footer>
+</html>
