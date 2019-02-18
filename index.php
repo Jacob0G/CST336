@@ -17,6 +17,8 @@ echo "<a href = 'Practice/p2/index.html'>p2</a>";
 echo "<br /><br />";
 echo "<a href = 'Labs/Lab3/index.html'>Lab3</a>";
 echo "<br /><br />";
+echo "<a href = 'Practice/p3/index.html'>p3</a>";
+echo "<br /><br />";
 ?>
 
 </body>
