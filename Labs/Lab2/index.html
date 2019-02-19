@@ -41,11 +41,10 @@
         <script>
             // Your JavaScript goes here
             var randomNumber =  Math.floor(Math.random()*99)+1;
-            // var guesses = document.querySelector("#guesses");
-            var lastResult = document.querySelector("#lastResult");
-            var lowOrHi = document.querySelector("#lowOrHi");
-            
-            var guessSubmit = document.querySelector(".guessSubmit");
+            var lastResult = $("#lastResult");
+            var lowOrHi = $("#lowOrHi");
+            let userGuesses = "Previous guesses: ";
+            var guessSubmit = $(".guessSubmit");
             var guessField = document.querySelector(".guessField");
             
             var guessCount = 1;
@@ -57,25 +56,27 @@
             function checkGuess() {
                 var userGuess = Number(guessField.value);
                 if (guessCount === 1) {
-                    $("#guesses").html("Previous guesses: ");
+                    $("#guesses").html(userGuesses);
                 }
-                $("#guesses").html("Previous guesses: "+= userGuess);
+                userGuesses += " ";
+                userGuesses += userGuess;
+                $("#guesses").html(userGuesses);
                 
                 if(userGuess === randomNumber) {
-                    lastResult.innerHTML = "Congratulations! you got it right!";
-                    lastResult.style.backgroundColor = "green";
-                    lowOrHi.innerHTML = "";
+                    lastResult.html("Congratulations! you got it right!");
+                    lastResult.css("background","green");
+                    lowOrHi.html("");
                     setGameOver();
                 } else if (guessCount === 7) {
-                        lastResult.innerHTML = "Sorry, you lost!";
+                        lastResult.html("Sorry, you lost!");
                         setGameOver()
                 } else {
-                        lastResult.innerHTML = "Wrong!";
-                        lastResult.style.backgroundColor = "red";
+                        lastResult.html("Wrong!");
+                        lastResult.css("background","red");
                     if(userGuess < randomNumber) {
-                            lowOrHi.innerHTML = "Last guess was too low!";
+                            lowOrHi.html("Last guess was too low!");
                     } else if(userGuess > randomNumber) {
-                            lowOrHi.innerHTML = "Last guess was too high!";
+                            lowOrHi.html("Last guess was too high!");
                       }
                     }
                     
@@ -83,7 +84,9 @@
                 guessField.value = "";
                 guessField.focus();
             }
-            
+        guessSubmit.on("click", function() {
+            checkGuess;
+        });
         guessSubmit.addEventListener("click", checkGuess);
         
         function setGameOver() {
