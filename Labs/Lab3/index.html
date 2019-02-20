@@ -9,14 +9,15 @@
         
         <h1 id="title" >US Geography Quiz</h1>
 
-        <br><br>
         <h2>What is the capital of California?</h2>
+        <span id="checkbox1"></span>
         <input id="q1" type = "text">
         <div id="q1_feedback"></div>
         
         <h2>What is the longest US River?</h2>
+        <span id="checkbox2"></span>
         <select id = q2>
-            <option value=""></option>
+            <option value="">Select One</option>
             <option value="Missisipi River">Missisipi River</option>
             <option value="Colorado River">Colorado River</option>
             <option value="Hudson River">Hudson River</option>
@@ -25,13 +26,15 @@
         <div id="q2_feedback"></div>
         
         <h2>What is the smallest US State?</h2>
+        <span id="checkbox3"></span>
         <input type="radio" name="q3" value = "Maine"><label for="Maine"</label>Maine
         <input type="radio" name="q3" value = "Rhode Island"><label for="Rhode Island"</label>Rhode Island
         <input type="radio" name="q3" value = "Maryland"><label for="Maryland"</label>Maryland
         <input type="radio" name="q3" value = "Maine"><label for="Maine"</label>Delaware
-        <div id="q3_feedback"></div>
+        <div id="q3_feedback"></div> 
         
         <h2>What presidents are carved into Mount Rushmore?</h2>
+        <span id="checkbox4"></span>
         <input type="checkbox" id="Jackson"   value = "A.Jackson">A.Jackson
         <input type="checkbox" id="Franklin"  value = "B.Franklin">B.Franklin
         <input type="checkbox" id="Jefferson" value = "T.Jefferson">T.Jefferson
@@ -40,17 +43,21 @@
         
         <br>
         <h2>What image is the offical California Seal?</h2>
+        <span id="checkbox5"></span>
         <img src="img/seal1.png" alt="seal 1" class="active" id="seal1">
         <img src="img/seal2.png" alt="seal 2" class="active" id="seal2">
         <img src="img/seal3.png" alt="seal 3" class="active" id="seal3">
+        
         <div id="q5_feedback"></div>
 
+        <h1 id=congrats></h1>
         <h3 id="totalScore"></h3>
         <Button id="submitBtn">Submit</Button>
         <h2 id=timesTaken></h2>
+        <h2 id="scoreHistory"></h2>
         
         <script>
-            
+            /* global $ */
             let q1_value = 20;
             let q2_value = 20;
             let q3_value = 20;
@@ -61,7 +68,6 @@
             let q2_ans = "Missouri River";
             let q3_ans = "Rhode Island";
             let q5_ans = "seal2";
-            
             let q5_response = "";
             
             $(".active").on("click", function() {
@@ -72,76 +78,80 @@
 
             let total_points = 0;
             let counter = localStorage.getItem("counter");
-            
-            funciton isFormValid(){
-                let isValid = true;
-                
-                if($("#q1").val() == ""){
-                    isValid = false;
-                    alert(isValid);
-                }
-                
-                
-                return isValid;
-            }
-            
-            
+            let prevScores = [];
             
             $("#submitBtn").on("click", function() {
-                
-                if(isFormValid()){
-                    return;
-                }
-                
                 
                 //Question 1
                 let q1_response = $("#q1").val().toLowerCase();
                 if(q1_response == q1_ans){
                     $("#q1_feedback").html("Correct!");
+                    $("#checkbox1").html("<img src= 'img/checkmark.png' />");
                     total_points += q1_value;
                 } else {
                     $("#q1_feedback").html("Incorrect!");
+                    $("#checkbox1").html("<img src= 'img/xmark.png' />");
                 }
                 
                 //Question 2
                 let q2_response = $("#q2").val();
                 if(q2_response == q2_ans){
                     $("#q2_feedback").html("Correct!");
+                    $("#checkbox2").html("<img src= 'img/checkmark.png' />");
                     total_points += q2_value;
                 } else {
                     $("#q2_feedback").html("Incorrect!");
+                    $("#checkbox2").html("<img src= 'img/xmark.png' />");
                 }
                 
                  //Question 3
                 let q3_response = $("input[name=q3]:checked").val();
                 if(q3_response == q3_ans){
                     $("#q3_feedback").html("Correct!");
+                    $("#checkbox3").html("<img src= 'img/checkmark.png' />");
                     total_points += q3_value;
                 } else {
                     $("#q3_feedback").html("Incorrect!");
+                    $("#checkbox3").html("<img src= 'img/xmark.png' />");
                 }
                 
                 //Question 4
                 if($('#Jefferson').is(':checked') && $('#Roosevelt').is(':checked') && $('#Jackson').is(':checked') == false && $('#Franklin').is(':checked') == false){
                     $("#q4_feedback").html("Correct!");
+                    $("#checkbox4").html("<img src= 'img/checkmark.png' />");
                     total_points += q4_value;
                 } else {
                     $("#q4_feedback").html("Incorrect!");
+                    $("#checkbox4").html("<img src= 'img/xmark.png' />");
                 }
                 
                 //Question 5
                 if(q5_response == q5_ans){
                     $("#q5_feedback").html("Correct!");
+                    $("#checkbox5").html("<img src= 'img/checkmark.png' />");
                     total_points += q5_value;
                 } else {
                     $("#q5_feedback").html("Incorrect!");
+                    $("#checkbox5").html("<img src= 'img/xmark.png' />");
                 }
-                
+                if(total_points === 100){
+                $("#congrats").html("Congratulations!");
+                }
+                else{
+                $("#congrats").html("");
+                }
                 $("#totalScore").html("The total Score is: "+ total_points);
+                prevScores.push(total_points);
                 total_points = 0;
                 counter++;
                 localStorage.setItem("counter",counter);
+                $("#timesTaken").html("Times taken: "+counter);
                 
+                
+                $("#scoreHistory").html("Previous Scores: ");
+                prevScores.forEach(function(score){
+                    $("#scoreHistory").append(score + " ");
+                });
                 $("#timesTaken").html("Survey taken: " + counter + " times.");
             });
         </script>
