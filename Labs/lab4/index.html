@@ -1,60 +1,133 @@
+<!DOCTYPE html>
 <html>
-<body>
 <head>
-<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-</head>
-<header>
-<h1>Earthquake Info</h1>
-</header>
-
-<form method="post">
-Start Time: <input type="text" id="starttime" value="2019-01-01"> <br><br>
-End Time: <input type="text" id="endtime" value="2019-02-15"> <br><br>
-Latitude: <input type="text" id="latitude" value="36.6"> <br><br>
-Longitude: <input type="text" id="longitude" value="-121.9"> <br><br>
-Max Radius: <input type="text" id="maxradius" value="10"> <br><br>
-Magnitud (0 to 7): <input type="range" id="minmag" min="0" value="3" max="7"> <br><br>
-</form>
-Change any value to update results.<br><br>
-
-<div id="earthquakeResult"></div>
+<title> Sign Up Page </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
-
-$("input").change(getEarthquakes);
-
-$("#zipCode").on("change",function(){
     
-})
+    $(document).ready( function(){
+        
+        $("#state").on("change", function() {
+            //alert($("#state").val());
+            
+            $.ajax({
 
-function getEarthquakes() { 
-$.ajax({
-type: "get",
-url: "http://earthquake.usgs.gov/fdsnws/event/1/query",
-dataType: "json",
-data: {
-"format":"geojson",
-"starttime":$("#starttime").val(),
-"endtime" :$("#endtime").val(),
-"latitude" :$("#latitude").val(),
-"longitude":$("#longitude").val(),
-"maxradius":$("#maxradius").val(),
-"minmag" :$("#minmag").val()
-},
-success: function(data,status) {
-$('#earthquakeResult').html(data["metadata"].title + "<br>");
-for (var i=0; i < data['features'].length; i++ ) {
-$('#earthquakeResult').append(data['features'][i]['properties']["mag"] + " - " + data['features'][i]['properties'].place + "<br/>");
-}
-},
-complete: function(data,status) { //optional, used for debugging purposes
-//alert(status);
-}
-});
-}
+                type: "GET",
+                url: "http://itcdland.csumb.edu/~milara/ajax/countyList.php",
+                dataType: "json",
+                data: { "state": $("#state").val() },
+                success: function(data,status) {
+                    
+                  //alert(data[0].county);
+                  $("#county").html("<option> Select One </option>");
+                  for (let i=0; i < data.length; i++){
+                      
+                      $("#county").append("<option>" + data[i].county + "</option>");
+                      
+                  }
+                  
+                
+                },
+                complete: function(data,status) { //optional, used for debugging purposes
+                //alert(status);
+                }
+                
+            });//ajax
+            
+        });
+        
+        $("#zipCode").on("change", function(){
+            
+            //alert(  $("#zipCode").val()  );
+            
+            $.ajax({
+                type: "GET",
+                url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
+                dataType: "json",
+                data: { "zip": $("#zipCode").val() },
+                success: function(data,status) {
+                  //alert(data.city);
+                  $("#zipError").html("");
+                  if(data === false){
+                      $("#zipError").html("Invalid Zip code!");
+                      $("#city").html("");
+                      $("#lat").html("");
+                      $("#long").html("");
+                  }
+                  $("#city").html(data.city);
+                  $("#lat").html(data.latitude);
+                  $("#long").html(data.longitude);
+                  
+                },
+                complete: function(data,status) { //optional, used for debugging purposes
+                //   alert(status);
+                }
+                
+            });//ajax
+            
+            
+        });//zipCode
+        
+        $("#username").on("change", function(){
+            // alert($("#username").val());
+            $.ajax({
+                type: "GET",
+                url: "http://myspace.csumb.edu/~milara/ajax/username/usernameLookup.php",
+                dataType: "json",
+                data: { "username": $("#username").val() },
+                success: function(data,status) {
+                alert(data.available);
+                
+                },
+                complete: function(data,status) { //optional, used for debugging purposes
+                //alert(status);
+                }
+            });//ajax  
+            
+        });
 
+        
+    } ); //document.ready()
+    
+        
+    
 </script>
 
-</body>
+</head>
+<body>
 
+<h1> Sign Up Form </h1>
+
+        <fieldset>
+        <legend>Sign Up</legend>
+        First Name: <input type="text"><br> 
+        Last Name: <input type="text"><br> 
+        Email: <input type="text"><br> 
+        Phone Number:<input type="text"><br><br>
+        Zip Code: <input type="text" id="zipCode"><span id="zipError"></span><br>
+        City: <span id="city"></span>
+        <br>
+        Latitude: <span id="lat"></span>
+        <br>
+        Longitude:<span id="long"></span>
+        <br><br>
+        State: 
+        <select id="state">
+           <option> Select One </option> 
+           <option value="ca"> California </option>
+           <option value="ny"> New York </option>
+           <option value="tx"> Texas </option>
+        </select>
+        <br>
+        
+        Select a County: <select id="county"></select><br>
+        
+        Desired Username: <input id="username" type="text"><br>
+        Password: <input id="password" type="password"><br>
+        Type Password Again: <input type="password"><br>
+        <input type="submit" value="Sign up!">
+        </fieldset>
+
+</body>
 </html>

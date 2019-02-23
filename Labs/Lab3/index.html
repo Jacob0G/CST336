@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8"/>
         <title>US Geography Quiz</title>
-        <script src="https://code.jquery.com/jquery.min.js"></script>   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
@@ -27,18 +31,20 @@
         
         <h2>What is the smallest US State?</h2>
         <span id="checkbox3"></span>
-        <input type="radio" name="q3" value = "Maine"><label for="Maine"</label>Maine
-        <input type="radio" name="q3" value = "Rhode Island"><label for="Rhode Island"</label>Rhode Island
-        <input type="radio" name="q3" value = "Maryland"><label for="Maryland"</label>Maryland
-        <input type="radio" name="q3" value = "Maine"><label for="Maine"</label>Delaware
+        <span action="">
+        <input type="radio" name="q3" value = "Maine">Maine</input>
+        <input type="radio" name="q3" value = "Rhode Island">Rhode Island</input>
+        <input type="radio" name="q3" value = "Maryland">Maryland</input>
+        <input type="radio" name="q3" value = "Maine">Delaware</input>
+        </span>
         <div id="q3_feedback"></div> 
         
         <h2>What presidents are carved into Mount Rushmore?</h2>
         <span id="checkbox4"></span>
-        <input type="checkbox" id="Jackson"   value = "A.Jackson">A.Jackson
-        <input type="checkbox" id="Franklin"  value = "B.Franklin">B.Franklin
-        <input type="checkbox" id="Jefferson" value = "T.Jefferson">T.Jefferson
-        <input type="checkbox" id="Roosevelt" value = "T.Roosevelt">T.Roosevelt
+        <input type="checkbox" id="Jackson"   name="q4" value = "A.Jackson">A.Jackson
+        <input type="checkbox" id="Franklin"  name="q4" value = "B.Franklin">B.Franklin
+        <input type="checkbox" id="Jefferson" name="q4" value = "T.Jefferson">T.Jefferson
+        <input type="checkbox" id="Roosevelt" name="q4" value = "T.Roosevelt">T.Roosevelt
         <div id="q4_feedback"></div>
         
         <br>
@@ -54,7 +60,7 @@
         <h3 id="totalScore"></h3>
         <Button id="submitBtn">Submit</Button>
         <h2 id=timesTaken></h2>
-        <h2 id="scoreHistory"></h2>
+        <h2 id="prevScores"></h2>
         
         <script>
             /* global $ */
@@ -75,11 +81,19 @@
                 $(this).css("background","yellow");
                 q5_response = $(this).attr("id");
             });
+            $("input[name='q3']").removeAttr("checked");
+            // $("input[name='q3']").attr("checked",false);
+            $("input[name='q4']").attr("checked",false);
+        
 
             let total_points = 0;
             let counter = localStorage.getItem("counter");
-            let prevScores = [];
-            
+            let scoresArray =  localStorage.getItem("scoreHistory");
+                if (scoresArray == null) {
+                    scoresArray = [];
+                } else {
+                    scoresArray = scoresArray.split(","); //creates array from a string
+                }
             $("#submitBtn").on("click", function() {
                 
                 //Question 1
@@ -141,19 +155,19 @@
                 $("#congrats").html("");
                 }
                 $("#totalScore").html("The total Score is: "+ total_points);
-                prevScores.push(total_points);
-                total_points = 0;
                 counter++;
                 localStorage.setItem("counter",counter);
+
                 $("#timesTaken").html("Times taken: "+counter);
-                
-                
-                $("#scoreHistory").html("Previous Scores: ");
-                prevScores.forEach(function(score){
-                    $("#scoreHistory").append(score + " ");
-                });
                 $("#timesTaken").html("Survey taken: " + counter + " times.");
-            });
+                scoresArray.push(total_points);
+                $("#prevScores").html("Score History: ");
+                scoresArray.forEach(function(score){
+                    $("#prevScores").append(score + " ");
+                });
+                
+                localStorage.setItem("scoreHistory",scoresArray); });
+                total_points = 0;
         </script>
     </body>
 </html>
