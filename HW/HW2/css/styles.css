@@ -1,0 +1,27 @@
+body{
+    margin:0px;
+    text-align:center;
+    background-color: #C4E1FA; 
+}
+
+#title{
+    padding: 25px;
+    background-color:#CDCDCD;
+}
+#submitBtn{
+    padding:15px;
+    background-color:#54A7EF;
+    color:white;
+    font-size:18px;
+    border-radius: 5px;
+    border-color: #54A7EF;
+}
+#q1_feedback{
+    font-size: 15px;
+}
+#q2_feedback{
+    font-size: 15px;
+}
+#q3_feedback{
+    font-size: 15px;
+}
