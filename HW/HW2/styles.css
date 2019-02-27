@@ -31,3 +31,9 @@ body{
 #q3_feedback{
     font-size: 15px;
 }
+#congrats{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    justify-content:center;
+}

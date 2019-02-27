@@ -56,9 +56,8 @@
         <img src="img/vw.png" alt="seal 4"      value="vw"     class="active" id="q5">
 
         <div id="q5_feedback"></div>
-
+        <h1 id=finishedTitle></h1>
         <h1 id=congrats></h1>
-        <h3 id="totalScore"></h3>
         <Button id="submitBtn">Submit</Button>
         <h2 id="validSubmission"></h2>
         
@@ -190,7 +189,7 @@
                     q5_value = "Toyota ";
                 }
                 car = q5_value + q4_value + q3_value + q2_value + q1_value;
-                $("#congrats").html(q5_value + q4_value + q3_value + q2_value + q1_value);
+                $("#finishedTitle").html(q5_value + q4_value + q3_value + q2_value + q1_value);
                 
                 $.ajax({
                     type: "GET",
