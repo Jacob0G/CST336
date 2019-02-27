@@ -64,6 +64,7 @@
         
         <script>
             /* global $ */
+            let car = "";
             let q1_value = "";
             let q2_value = "";
             let q3_value = "";
@@ -188,7 +189,23 @@
                 } else if(q5_response == "toyota"){
                     q5_value = "Toyota ";
                 }
+                car = q5_value + q4_value + q3_value + q2_value + q1_value;
                 $("#congrats").html(q5_value + q4_value + q3_value + q2_value + q1_value);
+                
+                $.ajax({
+                    type: "GET",
+                    url: "https://www.googleapis.com/customsearch/v1?key=AIzaSyAsswQ2MfFIJle_bytpVnkByUFwxQHWRds&cx=001709122771372852773:la2-44_uzxq&searchType=image",
+                    dataType: "json",
+                    data: { "q": car},
+                    success: function(data,status) {
+                    var link = data['items'][0]['link']
+                    $("#congrats").html("<img src="+link+">");
+                    },
+                    complete: function(data,status) { //optional, used for debugging purposes
+                    //alert(status);
+                    }
+                });//ajax
+                
                 });
 
             

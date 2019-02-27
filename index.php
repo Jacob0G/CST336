@@ -23,6 +23,8 @@ echo "<a href = 'Labs/lab4/pixabay.html'>Lab4</a>";
 echo "<br /><br />";
 echo "<a href = 'Practice/p4/index.html'>p4</a>";
 echo "<br /><br />";
+echo "<a href = 'HW/HW2/index.html'>HW2</a>";
+echo "<br /><br />";
 ?>
 
 </body>

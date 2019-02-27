@@ -21,7 +21,7 @@ function searchImage() {
         dataType: "json",
         data: { "q":$("#keyword").val() },
         success: function(data, status) {
-            let randomImage = Math.floor(Math.random() * data.hits.length);
+            let randomImage = Math.floor(Math.random() * data.link.length);
             $('#image').html("<img src='"+ data.hits[ randomImage ].webformatURL+"' width='500'>");
             $('#image').append("<br>Likes: " + data.hits[ randomImage ].likes)
         }
