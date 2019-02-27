@@ -1,12 +1,13 @@
 body{
     margin:0px;
     text-align:center;
-    background-color: #C4E1FA; 
+    background-color: white; 
 }
 
 #title{
     padding: 25px;
-    background-color:#CDCDCD;
+    background-color:black;
+    color: white;
 }
 #submitBtn{
     padding:15px;

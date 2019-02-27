@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="styles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         
@@ -180,22 +180,15 @@
                 
                 //Question 5                
                 if(q5_response == "ford"){
-                    $("#q5_feedback").html("Ford!");
                     q5_value = "Ford ";
                 } else if(q5_response == "bmw"){
-                    $("#q5_feedback").html("BMW!");
                     q5_value = "BMW ";
                 } else if(q5_response == "vw"){
-                    $("#q5_feedback").html("Volkwagen!");
                     q5_value = "Volkwagen ";
                 } else if(q5_response == "toyota"){
-                    $("#q5_feedback").html("Toyota!");
                     q5_value = "Toyota ";
                 }
                 $("#congrats").html(q5_value + q4_value + q3_value + q2_value + q1_value);
-
-                $("#totalScore").html("The total Score is: "+ total_points);
-                
                 });
 
             
