@@ -1,0 +1,52 @@
+.container {
+  border-style: solid;
+  border-color: #add8e6;
+  background-color:white;
+  border-radius: 25px;
+  width: 500px;
+  clear: both;
+}
+.container input {
+    width: 100%;
+    clear: both;
+}
+body{
+    margin:0px;
+    text-align:center;
+    background-color: rgb(200,200,200); 
+    justify-content:center;
+}
+#title{
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    padding: 25px;
+    color: #54A7EF;
+    font-size:50px;
+    font-style:bold;
+}
+#submitBtn{
+    padding:15px;
+    background-color:#54A7EF;
+    color:white;
+    font-size:18px;
+    border-radius: 5px;
+    border-color: #54A7EF;
+}
+#usernameError{
+    font-size:20px;
+}
+#passwordError{
+    font-size:20px;
+}
+#usernameCheck{
+    font-style:bold;
+    font-size:15px;
+}
+#passwordCheck{
+    font-size:20px;
+    font-style:bold;
+}
+#retypePass{
+    font-size:15px;
+    font-style:bold;
+}

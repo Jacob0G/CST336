@@ -35,7 +35,7 @@
         <input type="radio" name="q3" value = "convertible">        <label for="convertible">Convertible</input>
         <input type="radio" name="q3" value = "seating">            <label for="seating">Seating</input>
         <input type="radio" name="q3" value = "sound_system">       <label for="sound_system">sound system</input>
-        <input type="radio" name="q3" value = "color">              <label for="color">Color</input>
+        <input type="radio" name="q3" value = "truck">              <label for="truck">truck bed</input>
         </span>
         <div id="q3_feedback"></div> 
         
@@ -69,6 +69,8 @@
             let q3_value = "";
             let q4_value = "";
             let q5_value = "";
+            let id = "";
+            let secret = "";
             
             $(".active").on("click", function() {
                 $(".active").css("background","");
@@ -122,7 +124,7 @@
                 let q1_response = $("#q1").val().toLowerCase();
                 if(q1_response == "yes"){
                     $("#q1_feedback").html("More Power!");
-                    q1_value = "Horespower ";
+                    q1_value = "Horsepower ";
                 } else {
                     $("#q1_feedback").html("No fun!");
                     q1_value = "";
@@ -136,13 +138,12 @@
                 } else if(q2_response == "mpg") {
                     $("#q2_feedback").html("MPG is good for the wallet.");
                     q2_value = "MPG ";
-                }
-                else if(q2_response == "interior") {
+                } else if(q2_response == "interior") {
                     $("#q2_feedback").html("Comfomfy!");
-                    q2_value = "leather interior ";
-                }else if(q2_response == "exterior") {
+                    q2_value = "leather%interior ";
+                } else if(q2_response == "exterior") {
                     $("#q2_feedback").html("Slick");
-                    q2_value = "Luxury "
+                    q2_value = "Luxury ";
                 }
                 
                  //Question 3
@@ -155,26 +156,26 @@
                     q3_value = "SUV ";
                 } else if(q3_response == "sound_system"){
                     $("#q3_feedback").html("Blasting Music!");
-                    q3_value = "Sound System ";
-                }else if(q3_response == "paint"){
-                    $("#q3_feedback").html("Nice car color!");
-                    q3_value = "Silver ";
+                    q3_value = "Sound%System ";
+                }else if(q3_response == "truck"){
+                    $("#q3_feedback").html("Truck!");
+                    q3_value = "Truck ";
                 }
                 
                 
                 let q4_response = $("input[name=q4]:checked").val();
                 if(q4_response == "red"){
                     $("#q4_feedback").html("Sport red!");
-                    q4_value = "Sport Red "; 
+                    q4_value = "red "; 
                 } else if(q4_response == "blue"){
                     $("#q4_feedback").html("Sea Blue!");
-                    q4_value = "Sea Blue ";
+                    q4_value = "blue ";
                 } else if(q4_response == "silver"){
                     $("#q4_feedback").html("Pearl Silver");
-                    q4_value = "Pearl Silver ";
+                    q4_value = "silver ";
                 }else if(q4_response == "black"){
                     $("#q4_feedback").html("Midnight Black");
-                    q4_value = "Midnight Black ";
+                    q4_value = "black ";
                 }
 
                 
@@ -191,19 +192,83 @@
                 car = q5_value + q4_value + q3_value + q2_value + q1_value;
                 $("#finishedTitle").html(q5_value + q4_value + q3_value + q2_value + q1_value);
                 
-                $.ajax({
+                // $.ajax({
+                //     type: "GET",
+                //     url: "https://www.googleapis.com/customsearch/v1?key=AIzaSyAsswQ2MfFIJle_bytpVnkByUFwxQHWRds&cx=001709122771372852773:la2-44_uzxq&searchType=image",
+                //     dataType: "json",
+                //     data: { "q": car},
+                //     success: function(data,status) {
+                //     var link = data['items'][0]['link']
+                //     $("#congrats").html("<img src="+link+">");
+                //     },
+                //     complete: function(data,status) { //optional, used for debugging purposes
+                //     //alert(status);
+                //     }
+                // });//ajax
+                
+      
+                $.ajax({ // API call to search for photos
                     type: "GET",
-                    url: "https://www.googleapis.com/customsearch/v1?key=AIzaSyAsswQ2MfFIJle_bytpVnkByUFwxQHWRds&cx=001709122771372852773:la2-44_uzxq&searchType=image",
+                    url: "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c6163ccd61ef194f32ce21d02622d351&privacy_filter=1&content_type=1&media=photos&format=json&nojsoncallback=1",
                     dataType: "json",
-                    data: { "q": car},
+                    data: { "text": car},
                     success: function(data,status) {
-                    var link = data['items'][0]['link']
-                    $("#congrats").html("<img src="+link+">");
-                    },
+                        let Leng = parseInt(data['photos']['photo'].length);
+                        for(let i = 0; i<Leng;i++){
+                            var str = data['photos']['photo'][i]['title'];
+                            var res = str.split(" ");
+                            for(let j = 0; j <res.length;j++){
+                                var titleSplit = res[j].toLowerCase();
+                                alert(titleSplit+" "+q5_value.toLowerCase());
+                                if((titleSplit+" ").localeCompare("ford ") == 0){
+                                    // Gets ford! now get all q_values store to an array, send to get info, get tags, photo with most tags wins! send to getSize post image.
+                                    alert(data['photos']['photo'][i]['title']);
+                                }
+                            }
+                            let id = data['photos']['photo'][i]['id'];
+
+                            
+                            
+                            
+                            
+                            
+                            // $.ajax({
+                            //     type: "GET",
+                            //     url: "https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=c6163ccd61ef194f32ce21d02622d351&privacy_filter=1&content_type=1&media=photos&format=json&nojsoncallback=1",
+                            //     dataType: "json",
+                            //     data: { "photo_id": id},
+                            //     success: function(data,status) {
+                            //         alert(data['photos'])
+                            //     },
+                            //     complete: function(data,status) { //optional, used for debugging purposes
+                            //     //alert(status);
+                            //     }
+                            // });
+                        }
+                        
+                        secret = data['photos']['photo'][0]['secret'];
+                        // $.ajax({
+                        //     type: "GET",
+                        //     url: "https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=86f8c4f46b40a1c121e6d379a3c91f68&privacy_filter=1&content_type=1&media=photos&format=json&nojsoncallback=1",
+                        //     dataType: "json",
+                        //     data: { "photo_id": id},
+                        //     success: function(data,status) {
+                        //         let len = parseInt(data['sizes']['size'].length);
+                        //         len = len - 2;
+                        //         let link = data['sizes']['size'][len]['source'];
+                        //         $("#congrats").html("<img src="+link+">");
+                        //     },
+                        //     complete: function(data,status) { //optional, used for debugging purposes
+                        //     //alert(status);
+                        //     }
+                        // });//ajax https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=86f8c4f46b40a1c121e6d379a3c91f68&privacy_filter=1&content_type=1&media=photos&format=json&nojsoncallback=1&text=Ford%20red%20convertible%20Muscle%20Horespower
+                    },       //      https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=86f8c4f46b40a1c121e6d379a3c91f68&privacy_filter=1&content_type=1&media=photos&format=json&nojsoncallback=1&text=Ford%20red%20convertible%20Muscle%20Horsepower
                     complete: function(data,status) { //optional, used for debugging purposes
                     //alert(status);
                     }
                 });//ajax
+                
+                
                 
                 });
 

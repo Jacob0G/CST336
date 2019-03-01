@@ -3,11 +3,13 @@
 <head>
 <title> Sign Up Page </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="styles.css" rel="stylesheet" type="text/css" />
 <script>
     function isValid(){
             let isValid = true;
-            
             if($("#username").val().length < 4){
                 isValid = false;
                 $("#usernameError").html("Username not big enough (4 characters or more)");
@@ -24,6 +26,19 @@
                 $("#passwordError").html("");
             }
             return isValid;
+    }
+    function bothPassTrue(){
+        let isValid = true;
+        
+        if($("#password").val() === $("#passwordCheck").val()){
+            return isValid;
+        }
+        else{
+            isValid = false;
+            $("#retypePass").html("Retype password!")
+            $("#retypePass").css("color","red");
+            return isValid;
+        }
     }
 
     $(document).ready( function(){
@@ -115,7 +130,9 @@
         });
         
         $("#submitBtn").on("click", function() {
-            isValid();
+            if(isValid() == true && bothPassTrue() == true){
+                alert("Congratulations your pofile has been saved!");
+            }
         })
         
     } ); //document.ready()
@@ -126,39 +143,45 @@
 
 </head>
 <body>
-
-<h1> Sign Up Form </h1>
-
         <fieldset>
-        <legend>Sign Up</legend>
-        First Name: <input type="text"><br> 
-        Last Name: <input type="text"><br> 
-        Email: <input type="text"><br> 
-        Phone Number:<input type="text"><br><br>
-        Zip Code: <input type="text" id="zipCode"><span id="zipError"></span><br>
-        City: <span id="city"></span>
+        <h1 class="titleContainer" id="title"> Sign Up Form </h1>
+        <div class="container">
+        <form>
+            First Name: <input type="text"><br> 
+            Last Name: <input type="text"><br> 
+            Email:     <input type="text"><br> 
+            Phone Number:<input type="text"><br><br>
+        </form>
+        </div>
+        <div class="container">
+            <form>
+            Zip Code: <input type="text" id="zipCode"><span id="zipError"></span><br>
+            City: <span id="city"></span>
+            <br>
+            Latitude: <span id="lat"></span>
+            <br>
+            Longitude:<span id="long"></span>
+            <br><br>
+            </form>
+        </div>
+        <div class="container">
+        State: <select id="state">
+                   <option> Select One </option> 
+                   <option value="ca"> California </option>
+                   <option value="ny"> New York </option>
+                   <option value="tx"> Texas </option>
+                </select>
         <br>
-        Latitude: <span id="lat"></span>
-        <br>
-        Longitude:<span id="long"></span>
-        <br><br>
-        State: 
-        <select id="state">
-           <option> Select One </option> 
-           <option value="ca"> California </option>
-           <option value="ny"> New York </option>
-           <option value="tx"> Texas </option>
-        </select>
-        <br>
-        
         Select a County: <select id="county"></select><br>
-        
+        </div>
+        <div class="container">
         Desired Username: <input id="username" type="text"><span id="usernameCheck"></span><br>
-        Password: <input id="password" type="password"><br>
-        Type Password Again: <input type="password"><br>
+        Password: <input id="password" type="password"><span id="retypePass"></span><br>
+        Type Password Again: <input id="passwordCheck" type="password"><br>
         <input id="submitBtn" type="submit" value="Sign up!">
         <h1 id="usernameError"></h1>
         <h1 id="passwordError"></h1>
+        </div>
         </fieldset>
 
 </body>
