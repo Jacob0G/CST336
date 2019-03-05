@@ -192,81 +192,81 @@
                 car = q5_value + q4_value + q3_value + q2_value + q1_value;
                 $("#finishedTitle").html(q5_value + q4_value + q3_value + q2_value + q1_value);
                 
-                // $.ajax({
-                //     type: "GET",
-                //     url: "https://www.googleapis.com/customsearch/v1?key=AIzaSyAsswQ2MfFIJle_bytpVnkByUFwxQHWRds&cx=001709122771372852773:la2-44_uzxq&searchType=image",
-                //     dataType: "json",
-                //     data: { "q": car},
-                //     success: function(data,status) {
-                //     var link = data['items'][0]['link']
-                //     $("#congrats").html("<img src="+link+">");
-                //     },
-                //     complete: function(data,status) { //optional, used for debugging purposes
-                //     //alert(status);
-                //     }
-                // });//ajax
+                $.ajax({
+                    type: "GET",
+                    url: "https://www.googleapis.com/customsearch/v1?key=AIzaSyAsswQ2MfFIJle_bytpVnkByUFwxQHWRds&cx=001709122771372852773:la2-44_uzxq&searchType=image",
+                    dataType: "json",
+                    data: { "q": car},
+                    success: function(data,status) {
+                    var link = data['items'][0]['link']
+                    $("#congrats").html("<img src="+link+">");
+                    },
+                    complete: function(data,status) { //optional, used for debugging purposes
+                    //alert(status);
+                    }
+                });//ajax
                 
       
-                $.ajax({ // API call to search for photos
-                    type: "GET",
-                    url: "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c6163ccd61ef194f32ce21d02622d351&privacy_filter=1&content_type=1&media=photos&format=json&nojsoncallback=1",
-                    dataType: "json",
-                    data: { "text": car},
-                    success: function(data,status) {
-                        let Leng = parseInt(data['photos']['photo'].length);
-                        for(let i = 0; i<Leng;i++){
-                            var str = data['photos']['photo'][i]['title'];
-                            var res = str.split(" ");
-                            for(let j = 0; j <res.length;j++){
-                                var titleSplit = res[j].toLowerCase();
-                                alert(titleSplit+" "+q5_value.toLowerCase());
-                                if((titleSplit+" ").localeCompare("ford ") == 0){
-                                    // Gets ford! now get all q_values store to an array, send to get info, get tags, photo with most tags wins! send to getSize post image.
-                                    alert(data['photos']['photo'][i]['title']);
-                                }
-                            }
-                            let id = data['photos']['photo'][i]['id'];
+                // $.ajax({ // API call to search for photos
+                //     type: "GET",
+                //     url: "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c6163ccd61ef194f32ce21d02622d351&privacy_filter=1&content_type=1&media=photos&format=json&nojsoncallback=1",
+                //     dataType: "json",
+                //     data: { "text": car},
+                //     success: function(data,status) {
+                //         let Leng = parseInt(data['photos']['photo'].length);
+                //         for(let i = 0; i<Leng;i++){
+                //             var str = data['photos']['photo'][i]['title'];
+                //             var res = str.split(" ");
+                //             for(let j = 0; j <res.length;j++){
+                //                 var titleSplit = res[j].toLowerCase();
+                //                 alert(titleSplit+" "+q5_value.toLowerCase());
+                //                 if((titleSplit+" ").localeCompare("ford ") == 0){
+                //                     // Gets ford! now get all q_values store to an array, send to get info, get tags, photo with most tags wins! send to getSize post image.
+                //                     alert(data['photos']['photo'][i]['title']);
+                //                 }
+                //             }
+                //             let id = data['photos']['photo'][i]['id'];
 
                             
                             
                             
                             
                             
-                            // $.ajax({
-                            //     type: "GET",
-                            //     url: "https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=c6163ccd61ef194f32ce21d02622d351&privacy_filter=1&content_type=1&media=photos&format=json&nojsoncallback=1",
-                            //     dataType: "json",
-                            //     data: { "photo_id": id},
-                            //     success: function(data,status) {
-                            //         alert(data['photos'])
-                            //     },
-                            //     complete: function(data,status) { //optional, used for debugging purposes
-                            //     //alert(status);
-                            //     }
-                            // });
-                        }
+                //             // $.ajax({
+                //             //     type: "GET",
+                //             //     url: "https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=c6163ccd61ef194f32ce21d02622d351&privacy_filter=1&content_type=1&media=photos&format=json&nojsoncallback=1",
+                //             //     dataType: "json",
+                //             //     data: { "photo_id": id},
+                //             //     success: function(data,status) {
+                //             //         alert(data['photos'])
+                //             //     },
+                //             //     complete: function(data,status) { //optional, used for debugging purposes
+                //             //     //alert(status);
+                //             //     }
+                //             // });
+                //         }
                         
-                        secret = data['photos']['photo'][0]['secret'];
-                        // $.ajax({
-                        //     type: "GET",
-                        //     url: "https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=86f8c4f46b40a1c121e6d379a3c91f68&privacy_filter=1&content_type=1&media=photos&format=json&nojsoncallback=1",
-                        //     dataType: "json",
-                        //     data: { "photo_id": id},
-                        //     success: function(data,status) {
-                        //         let len = parseInt(data['sizes']['size'].length);
-                        //         len = len - 2;
-                        //         let link = data['sizes']['size'][len]['source'];
-                        //         $("#congrats").html("<img src="+link+">");
-                        //     },
-                        //     complete: function(data,status) { //optional, used for debugging purposes
-                        //     //alert(status);
-                        //     }
-                        // });//ajax https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=86f8c4f46b40a1c121e6d379a3c91f68&privacy_filter=1&content_type=1&media=photos&format=json&nojsoncallback=1&text=Ford%20red%20convertible%20Muscle%20Horespower
-                    },       //      https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=86f8c4f46b40a1c121e6d379a3c91f68&privacy_filter=1&content_type=1&media=photos&format=json&nojsoncallback=1&text=Ford%20red%20convertible%20Muscle%20Horsepower
-                    complete: function(data,status) { //optional, used for debugging purposes
-                    //alert(status);
-                    }
-                });//ajax
+                //         secret = data['photos']['photo'][0]['secret'];
+                //         // $.ajax({
+                //         //     type: "GET",
+                //         //     url: "https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=86f8c4f46b40a1c121e6d379a3c91f68&privacy_filter=1&content_type=1&media=photos&format=json&nojsoncallback=1",
+                //         //     dataType: "json",
+                //         //     data: { "photo_id": id},
+                //         //     success: function(data,status) {
+                //         //         let len = parseInt(data['sizes']['size'].length);
+                //         //         len = len - 2;
+                //         //         let link = data['sizes']['size'][len]['source'];
+                //         //         $("#congrats").html("<img src="+link+">");
+                //         //     },
+                //         //     complete: function(data,status) { //optional, used for debugging purposes
+                //         //     //alert(status);
+                //         //     }
+                //         // });//ajax https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=86f8c4f46b40a1c121e6d379a3c91f68&privacy_filter=1&content_type=1&media=photos&format=json&nojsoncallback=1&text=Ford%20red%20convertible%20Muscle%20Horespower
+                //     },       //      https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=86f8c4f46b40a1c121e6d379a3c91f68&privacy_filter=1&content_type=1&media=photos&format=json&nojsoncallback=1&text=Ford%20red%20convertible%20Muscle%20Horsepower
+                //     complete: function(data,status) { //optional, used for debugging purposes
+                //     //alert(status);
+                //     }
+                // });//ajax
                 
                 
                 
