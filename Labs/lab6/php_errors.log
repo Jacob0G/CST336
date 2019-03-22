@@ -1,0 +1,97 @@
+[12-Mar-2019 23:58:49 UTC] PHP Warning:  include(../../../inc/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php on line 2
+[12-Mar-2019 23:58:49 UTC] PHP Stack trace:
+[12-Mar-2019 23:58:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php:0
+[12-Mar-2019 23:58:49 UTC] PHP Warning:  include(): Failed opening '../../../inc/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php on line 2
+[12-Mar-2019 23:58:49 UTC] PHP Stack trace:
+[12-Mar-2019 23:58:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php:0
+[12-Mar-2019 23:58:49 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php on line 3
+[12-Mar-2019 23:58:49 UTC] PHP Stack trace:
+[12-Mar-2019 23:58:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php:0
+[12-Mar-2019 23:58:55 UTC] PHP Warning:  include(../../../inc/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php on line 2
+[12-Mar-2019 23:58:55 UTC] PHP Stack trace:
+[12-Mar-2019 23:58:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php:0
+[12-Mar-2019 23:58:55 UTC] PHP Warning:  include(): Failed opening '../../../inc/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php on line 2
+[12-Mar-2019 23:58:55 UTC] PHP Stack trace:
+[12-Mar-2019 23:58:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php:0
+[12-Mar-2019 23:58:55 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php on line 3
+[12-Mar-2019 23:58:55 UTC] PHP Stack trace:
+[12-Mar-2019 23:58:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php:0
+[12-Mar-2019 23:59:45 UTC] PHP Warning:  include(../../../inc/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php on line 2
+[12-Mar-2019 23:59:45 UTC] PHP Stack trace:
+[12-Mar-2019 23:59:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php:0
+[12-Mar-2019 23:59:45 UTC] PHP Warning:  include(): Failed opening '../../../inc/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php on line 2
+[12-Mar-2019 23:59:45 UTC] PHP Stack trace:
+[12-Mar-2019 23:59:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php:0
+[12-Mar-2019 23:59:45 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php on line 3
+[12-Mar-2019 23:59:45 UTC] PHP Stack trace:
+[12-Mar-2019 23:59:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab6/api/getCategories.php:0
+[20-Mar-2019 00:17:41 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, object given in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 23
+[20-Mar-2019 00:17:41 UTC] PHP Stack trace:
+[20-Mar-2019 00:17:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php:0
+[20-Mar-2019 00:17:41 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php:23
+[20-Mar-2019 00:31:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''om_product' WHERE 1' at line 1' in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php:26
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php(26): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 26
+[20-Mar-2019 00:31:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''om_product' WHERE 1' at line 1' in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php:26
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php(26): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 26
+[20-Mar-2019 00:37:49 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 23
+[20-Mar-2019 00:38:04 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 23
+[20-Mar-2019 00:38:04 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 23
+[20-Mar-2019 00:38:04 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 23
+[20-Mar-2019 00:40:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%%' at line 1' in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php:26
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php(26): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 26
+[20-Mar-2019 00:47:19 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 26
+[20-Mar-2019 00:47:23 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 26
+[20-Mar-2019 00:47:24 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 26
+[20-Mar-2019 00:47:43 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 25
+[20-Mar-2019 00:50:27 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 27
+[20-Mar-2019 00:50:27 UTC] PHP Stack trace:
+[20-Mar-2019 00:50:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php:0
+[20-Mar-2019 01:04:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'catId = '1'' at line 1' in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 22
+[20-Mar-2019 01:04:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'catId = '4'' at line 1' in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 22
+[20-Mar-2019 01:05:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'catId = '4'' at line 1' in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 22
+[20-Mar-2019 01:05:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'catId = '4'' at line 1' in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 22
+[20-Mar-2019 01:05:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'catId = '\'4\''' at line 1' in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 22
+[20-Mar-2019 01:05:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'catId = '\'4\''' at line 1' in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 22
+[20-Mar-2019 01:05:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'catId = '4'' at line 1' in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 22
+[20-Mar-2019 01:06:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab6/api/getSearchResults.php on line 22
