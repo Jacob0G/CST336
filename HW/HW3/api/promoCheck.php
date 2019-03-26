@@ -9,9 +9,9 @@ $stmt->execute();
 $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
 for ($num = 0; $num <= count($records)-1; $num += 1) { 
     $str = implode("",$records[$num]);
-    // echo $str;
-    if(strcmp($promoCode,$str) == 0){
+    if(strcmp(strtolower($promoCode),strtolower($str)) == 0){
         $code['here']=true;
+        break;
     }else{
         $code['here']=false;
     }

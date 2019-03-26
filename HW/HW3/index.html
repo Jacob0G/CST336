@@ -20,7 +20,7 @@
             let taxAmount = 0;
             let total = 0;
         
-            //Gets Category list from database and displays them in the dropdown menu
+            //Gets Products to a list from database and displays them in the dropdown menu
             $.ajax({
                 type: "GET",
                 url: "api/getAllProducts.php",
@@ -31,10 +31,10 @@
                     });
                 }
             });
-            
+            // Gets a random Promocode to fill in the promocode section
             $.ajax({
                     type: "GET",
-                    url: "api/applyPromoCode.php",
+                    url: "api/getRandomPromoCode.php",
                     dataType: "json",
                     success: function(data,status) 
                     {   
@@ -54,9 +54,9 @@
                         //optional, used for debugging purposes
                         //alert(status);
                     }
-                    
             });//ajax
             
+            // Gets the random Product to place on the top
             $.ajax({
                 type: "GET",
                 url: "api/getRandomProduct.php",
@@ -73,13 +73,14 @@
                     //optional, used for debugging purposes
                     //alert(status);
                 }
-                
             });//ajax
-        
+            
+            // When The dropdown products change get price of item selected
              $("#products").on("change", function(){
                  $("#productPrices").html($("#products").val());
              });
-            
+             
+            // When a promocode is typed into text box check to see if real
             $("#promoCode").on('change', function(){
                 $.ajax({
                     type: "GET",
@@ -88,16 +89,30 @@
                     data: {'promoCode': $("#promoCode").val()},
                     success: function(data,status) 
                     {   
-                        // alert(data['promoCode']);
-
                         if(data.here){
-                            // $("promoCode").css("color","green");
-                            // $("#EXP").html("Promo will expire: "+ data['expirationDate']);
-                            // $("#EXP").css("color","red");
-                            // discount = data['discount'];
-                            // discountAmount = data['discount']/100;
-                            // $("#discountPercent").html(discount+"%");
-                            // $("#discountTotal").html("$" + discountAmount);
+                            $.ajax({
+                                type: "GET",
+                                url: "api/getPromoCode.php",
+                                dataType: "json",
+                                data: {'promoCode': $("#promoCode").val()},
+                                success: function(data,status) 
+                                {
+                                    // alert(data[0]['promoCode']);
+                                    $("promoCode").css("color","green");
+                                    $("#EXP").html("Promo will expire: "+ data[0]['expirationDate']);
+                                    $("#EXP").css("color","red");
+                                    discount = data[0]['discount'];
+                                    discountAmount = data[0]['discount']/100;
+                                    $("#discountPercent").html(discount+"%");
+                                    $("#discountTotal").html("$" + discountAmount);
+                                },
+                                complete: function(data,status) 
+                                { 
+                                //optional, used for debugging purposes
+                                //alert(status);
+                                }
+                            });//ajax
+
                         }else{
                             // $("promoCode").css("color","red");
                             // $("#EXP").html("PromoCode not found");
