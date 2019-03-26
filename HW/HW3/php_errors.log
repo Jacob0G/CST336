@@ -1,0 +1,291 @@
+[25-Mar-2019 20:28:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'midtermP.mp_code' doesn't exist' in /home/ubuntu/workspace/CST336/Practice/Midterm/api/applyPromoCode.php:6
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/Midterm/api/applyPromoCode.php(6): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/Midterm/api/applyPromoCode.php on line 6
+[25-Mar-2019 21:46:09 UTC] PHP Warning:  strtolower() expects exactly 1 parameter, 2 given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 9
+[25-Mar-2019 21:46:09 UTC] PHP Stack trace:
+[25-Mar-2019 21:46:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 21:46:09 UTC] PHP   2. strtolower() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:9
+[25-Mar-2019 21:49:16 UTC] PHP Warning:  strtolower() expects exactly 1 parameter, 2 given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 9
+[25-Mar-2019 21:49:16 UTC] PHP Stack trace:
+[25-Mar-2019 21:49:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 21:49:16 UTC] PHP   2. strtolower() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:9
+[25-Mar-2019 22:30:38 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:30:38 UTC] PHP Stack trace:
+[25-Mar-2019 22:30:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:30:38 UTC] PHP   2. in_array() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:34:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:34:47 UTC] PHP Stack trace:
+[25-Mar-2019 22:34:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:34:47 UTC] PHP   2. in_array() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:34:58 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:34:58 UTC] PHP Stack trace:
+[25-Mar-2019 22:34:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:34:58 UTC] PHP   2. in_array() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:37:15 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:37:15 UTC] PHP Stack trace:
+[25-Mar-2019 22:37:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:37:15 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:37:15 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:37:15 UTC] PHP Stack trace:
+[25-Mar-2019 22:37:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:37:15 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:37:15 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:37:15 UTC] PHP Stack trace:
+[25-Mar-2019 22:37:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:37:15 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:37:15 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:37:15 UTC] PHP Stack trace:
+[25-Mar-2019 22:37:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:37:15 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:37:15 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:37:15 UTC] PHP Stack trace:
+[25-Mar-2019 22:37:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:37:15 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:37:15 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:37:15 UTC] PHP Stack trace:
+[25-Mar-2019 22:37:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:37:15 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:37:30 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:37:30 UTC] PHP Stack trace:
+[25-Mar-2019 22:37:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:37:30 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:37:30 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:37:30 UTC] PHP Stack trace:
+[25-Mar-2019 22:37:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:37:30 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:37:30 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:37:30 UTC] PHP Stack trace:
+[25-Mar-2019 22:37:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:37:30 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:37:30 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:37:30 UTC] PHP Stack trace:
+[25-Mar-2019 22:37:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:37:30 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:37:30 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:37:30 UTC] PHP Stack trace:
+[25-Mar-2019 22:37:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:37:30 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:37:30 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:37:30 UTC] PHP Stack trace:
+[25-Mar-2019 22:37:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:37:30 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:38:54 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:38:54 UTC] PHP Stack trace:
+[25-Mar-2019 22:38:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:38:54 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:38:54 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:38:54 UTC] PHP Stack trace:
+[25-Mar-2019 22:38:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:38:54 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:38:54 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:38:54 UTC] PHP Stack trace:
+[25-Mar-2019 22:38:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:38:54 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:38:54 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:38:54 UTC] PHP Stack trace:
+[25-Mar-2019 22:38:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:38:54 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:38:54 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:38:54 UTC] PHP Stack trace:
+[25-Mar-2019 22:38:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:38:54 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:38:54 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:38:54 UTC] PHP Stack trace:
+[25-Mar-2019 22:38:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:38:54 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:39:13 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:39:13 UTC] PHP Stack trace:
+[25-Mar-2019 22:39:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:39:13 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:39:13 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:39:13 UTC] PHP Stack trace:
+[25-Mar-2019 22:39:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:39:13 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:39:13 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:39:13 UTC] PHP Stack trace:
+[25-Mar-2019 22:39:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:39:13 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:39:13 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:39:13 UTC] PHP Stack trace:
+[25-Mar-2019 22:39:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:39:13 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:39:13 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:39:13 UTC] PHP Stack trace:
+[25-Mar-2019 22:39:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:39:13 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:39:13 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:39:13 UTC] PHP Stack trace:
+[25-Mar-2019 22:39:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:39:13 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:39:13 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:39:13 UTC] PHP Stack trace:
+[25-Mar-2019 22:39:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:39:13 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:40:00 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:40:00 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:00 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:40:00 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:40:00 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:00 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:40:00 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:40:00 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:00 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:40:00 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:40:00 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:00 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:40:00 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:40:00 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:00 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:40:00 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:40:00 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:00 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:40:20 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:40:20 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:20 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:40:20 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:40:20 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:20 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:40:20 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:40:20 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:20 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:40:20 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:40:20 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:20 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:40:20 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:40:20 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:20 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:40:20 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:40:20 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:20 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:40:31 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:40:31 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:31 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:40:31 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:40:31 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:31 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:40:31 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:40:31 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:31 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:40:31 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:40:31 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:31 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:40:31 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:40:31 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:31 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:40:31 UTC] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:40:31 UTC] PHP Stack trace:
+[25-Mar-2019 22:40:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:40:31 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:41:13 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:41:13 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:13 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:41:13 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:41:13 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:13 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:41:13 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:41:13 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:13 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:41:13 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:41:13 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:13 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:41:13 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:41:13 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:13 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:41:13 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:41:13 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:13 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:41:44 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:41:44 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:44 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:41:44 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:41:44 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:44 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:41:44 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:41:44 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:44 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:41:44 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:41:44 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:44 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:41:44 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:41:44 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:44 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:41:44 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 12
+[25-Mar-2019 22:41:44 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:44 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:12
+[25-Mar-2019 22:41:51 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:41:51 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:51 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:41:51 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:41:51 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:51 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:41:51 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:41:51 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:51 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:41:51 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:41:51 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:51 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:41:51 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:41:51 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:51 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:41:51 UTC] PHP Warning:  strcmp() expects parameter 1 to be string, array given in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 13
+[25-Mar-2019 22:41:51 UTC] PHP Stack trace:
+[25-Mar-2019 22:41:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:41:51 UTC] PHP   2. strcmp() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:13
+[25-Mar-2019 22:48:24 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 11
+[25-Mar-2019 22:48:24 UTC] PHP Stack trace:
+[25-Mar-2019 22:48:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:48:24 UTC] PHP   2. implode() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:11
+[25-Mar-2019 22:48:59 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 11
+[25-Mar-2019 22:48:59 UTC] PHP Stack trace:
+[25-Mar-2019 22:48:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:48:59 UTC] PHP   2. implode() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:11
+[25-Mar-2019 22:49:18 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php on line 11
+[25-Mar-2019 22:49:18 UTC] PHP Stack trace:
+[25-Mar-2019 22:49:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:0
+[25-Mar-2019 22:49:18 UTC] PHP   2. implode() /home/ubuntu/workspace/CST336/Practice/Midterm/api/promoCheck.php:11
+[25-Mar-2019 22:57:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE 1' at line 1' in /home/ubuntu/workspace/CST336/Practice/Midterm/api/getPromoCode.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/Midterm/api/getPromoCode.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/Midterm/api/getPromoCode.php on line 12
+[25-Mar-2019 22:58:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE 1 AND promoCode LIKE '%sandals%'' at line 1' in /home/ubuntu/workspace/CST336/Practice/Midterm/api/getPromoCode.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/Midterm/api/getPromoCode.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/Midterm/api/getPromoCode.php on line 12
