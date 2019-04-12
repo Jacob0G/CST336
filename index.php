@@ -31,6 +31,8 @@ echo "<a href = 'Labs/lab5/index.html'>Lab5</a>";
 echo "<br /><br />";
 echo "<a href = 'Labs/lab6/index.html'>Lab4</a>";
 echo "<br /><br />";
+echo "<a href = 'Labs/lab7/login.php'>Lab4</a>";
+echo "<br /><br />";
 ?>
 
 </body>
