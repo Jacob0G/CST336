@@ -17,7 +17,7 @@ $namedParameters = array();
 $namedParameters[':username'] = $username;
 $namedParameters[':password'] = $password;
 
-print_r($namedParameters[':username']);
+print_r($namedParameters[':password']);
 
 $stmt = $conn->prepare($sql);
 $stmt->execute($namedParameters);
