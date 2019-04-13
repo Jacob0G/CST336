@@ -18,8 +18,8 @@ $namedParameters[':username'] = $username;
 $namedParameters[':password'] = $password;
 
 $stmt = $conn->prepare($sql);
-$stmt->execute($namedParameters);
 echo "hello\n";
+$stmt->execute($namedParameters);
 $record = $stmt->fetch(PDO::FETCH_ASSOC); //we are expecting ONLY one record, so we use fetch instead of fetchAll
 
 // echo json_encode($record);
