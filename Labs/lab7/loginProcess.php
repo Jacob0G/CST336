@@ -1,7 +1,7 @@
 <?php
-session_start(); //starts or resumes an existing session
+// session_start(); //starts or resumes an existing session
 
-//print_r($_POST); //for debugging purposes, display the content of the $_POST array
+print_r($_POST); //for debugging purposes, display the content of the $_POST array
 
 include '../../inc/dbConnection.php';
 
@@ -26,7 +26,7 @@ $record = $stmt->fetch(PDO::FETCH_ASSOC); //we are expecting ONLY one record, so
  if (empty($record)) {
      
      // echo "Username or Password are incorrect!";
-     header("Location: login.php?LoginError=True");
+     // header("Location: login.php?LoginError=True");
 
      
  }  else {
