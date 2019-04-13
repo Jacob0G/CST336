@@ -17,11 +17,11 @@ $namedParameters = array();
 $namedParameters[':username'] = $username;
 $namedParameters[':password'] = $password;
 
-print_r($namedParameters[':password']);
-
 $stmt = $conn->prepare($sql);
 $stmt->execute($namedParameters);
 $record = $stmt->fetch(PDO::FETCH_ASSOC); //we are expecting ONLY one record, so we use fetch instead of fetchAll
+
+echo count($record);
 
 // print_r($record);
  
