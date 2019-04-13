@@ -14,16 +14,17 @@ $password = sha1($_POST['password']);
 $sql = "SELECT * FROM om_admin WHERE username = :username AND password = :password";
 
 $namedParameters = array();
-$namedParameters[':username'] = $username;
-$namedParameters[':password'] = $password;
+$namedParameters[':username'] = "$username";
+$namedParameters[':password'] = "$password";
 
 $stmt = $conn->prepare($sql);
 echo "hello\n";
 $stmt->execute($namedParameters);
+echo "1";
 $record = $stmt->fetch(PDO::FETCH_ASSOC); //we are expecting ONLY one record, so we use fetch instead of fetchAll
-
-// echo json_encode($record);
- 
+echo "2";
+echo json_encode($record);
+echo "3";
 //  if (empty($record)) {
      
 //      // echo "Username or Password are incorrect!";

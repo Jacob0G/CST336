@@ -1,0 +1,5 @@
+[13-Apr-2019 15:55:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/CST336/Labs/lab7/loginProcess.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab7/loginProcess.php(22): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab7/loginProcess.php on line 22
