@@ -12,12 +12,12 @@ $password = sha1($_POST['password']);
 
 
 $sql = "SELECT * FROM om_admin WHERE username = :username AND password = :password";
-print_r($sql);
 
 $namedParameters = array();
 $namedParameters[':username'] = $username;
 $namedParameters[':password'] = $password;
 
+print_r($namedParameters[':username']);
 
 $stmt = $conn->prepare($sql);
 $stmt->execute($namedParameters);
