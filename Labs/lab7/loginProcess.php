@@ -21,7 +21,8 @@ $stmt = $conn->prepare($sql);
 $stmt->execute($namedParameters);
 $record = $stmt->fetch(PDO::FETCH_ASSOC); //we are expecting ONLY one record, so we use fetch instead of fetchAll
 
-print_r(empty($record));
+$var = "Hello ".empty($record);
+print_r($var);
  
  if (empty($record)) {
      
