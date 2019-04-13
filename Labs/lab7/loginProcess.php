@@ -1,7 +1,7 @@
 <?php
-// session_start(); //starts or resumes an existing session
+session_start(); //starts or resumes an existing session
 
-print_r($_POST); //for debugging purposes, display the content of the $_POST array
+// print_r($_POST); //for debugging purposes, display the content of the $_POST array
 
 include '../../inc/dbConnection.php';
 
@@ -9,6 +9,7 @@ $conn = getDatabaseConnection("ottermart");
 
 $username = $_POST['username'];
 $password = sha1($_POST['password']);
+print_r($username);
 
 $sql = "SELECT * FROM om_admin WHERE username = :username AND password = :password";
 
