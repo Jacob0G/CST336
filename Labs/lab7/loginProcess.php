@@ -9,9 +9,10 @@ $conn = getDatabaseConnection("ottermart");
 
 $username = $_POST['username'];
 $password = sha1($_POST['password']);
-print_r($username);
+
 
 $sql = "SELECT * FROM om_admin WHERE username = :username AND password = :password";
+print_r($username);
 
 $namedParameters = array();
 $namedParameters[':username'] = $username;
