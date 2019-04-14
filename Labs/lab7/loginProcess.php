@@ -18,13 +18,14 @@ $namedParameters[':username'] = "$username";
 $namedParameters[':password'] = "$password";
 
 $stmt = $conn->prepare($sql);
-echo "hello\n";
-$stmt->execute($namedParameters);
-echo "1";
-$record = $stmt->fetch(PDO::FETCH_ASSOC); //we are expecting ONLY one record, so we use fetch instead of fetchAll
-echo "2";
-echo json_encode($record);
-echo "3";
+
+if ($stmt->execute($namedParameters)) { 
+   echo "it worked\n";
+} else {
+   echo "it didn't\n";
+}
+$records = $stmt->fetchAll(PDO::FETCH_ASSOC);
+echo json_encode($records);
 //  if (empty($record)) {
      
 //      // echo "Username or Password are incorrect!";
