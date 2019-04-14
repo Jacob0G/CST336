@@ -1,6 +1,9 @@
 <?php
 session_start(); //starts or resumes an existing session
 
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+
 // print_r($_POST); //for debugging purposes, display the content of the $_POST array
 
 include '../../inc/dbConnection.php';
@@ -19,10 +22,10 @@ $namedParameters[':password'] = "$password";
 
 $stmt = $conn->prepare($sql);
 echo "Hello\n";
-if ($stmt->execute($namedParameters)) { 
-   echo "it worked\n";
-} else {
-   echo "it didn't\n";
+$res = $stmt->execute($namedParameters);
+if (!$res)
+{
+   debug($stmt->error);
 }
 $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
 echo json_encode($records);
