@@ -16,3 +16,9 @@ Stack trace:
 [14-Apr-2019 19:52:09 UTC] PHP Notice:  Undefined index: password in /home/ubuntu/workspace/CST336/Labs/lab7/loginProcess.php on line 14
 [14-Apr-2019 19:52:09 UTC] PHP Stack trace:
 [14-Apr-2019 19:52:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/loginProcess.php:0
+[14-Apr-2019 20:07:41 UTC] PHP Notice:  Undefined index: username in /home/ubuntu/workspace/CST336/Labs/lab7/loginProcess.php on line 13
+[14-Apr-2019 20:07:41 UTC] PHP Stack trace:
+[14-Apr-2019 20:07:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/loginProcess.php:0
+[14-Apr-2019 20:07:41 UTC] PHP Notice:  Undefined index: password in /home/ubuntu/workspace/CST336/Labs/lab7/loginProcess.php on line 14
+[14-Apr-2019 20:07:41 UTC] PHP Stack trace:
+[14-Apr-2019 20:07:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/loginProcess.php:0
