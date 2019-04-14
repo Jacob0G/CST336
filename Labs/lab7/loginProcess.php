@@ -18,7 +18,7 @@ $namedParameters[':username'] = "$username";
 $namedParameters[':password'] = "$password";
 
 $stmt = $conn->prepare($sql);
-
+echo "Hello\n";
 if ($stmt->execute($namedParameters)) { 
    echo "it worked\n";
 } else {
