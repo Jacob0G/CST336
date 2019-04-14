@@ -1,0 +1,42 @@
+[14-Apr-2019 20:31:14 UTC] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php on line 9
+[14-Apr-2019 20:31:14 UTC] PHP Stack trace:
+[14-Apr-2019 20:31:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php:0
+[14-Apr-2019 20:31:14 UTC] PHP   2. PDO->__construct() /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php:9
+[14-Apr-2019 20:31:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known' in /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php:9
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php(9): PDO->__construct('mysql:host=hero...', 'root', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php on line 9
+[14-Apr-2019 20:34:37 UTC] PHP Fatal error:  Call to a member function prepcare() on a non-object in /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php on line 10
+[14-Apr-2019 20:34:37 UTC] PHP Stack trace:
+[14-Apr-2019 20:34:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php:0
+[14-Apr-2019 20:35:02 UTC] PHP Fatal error:  Call to a member function prepcare() on a non-object in /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php on line 10
+[14-Apr-2019 20:35:02 UTC] PHP Stack trace:
+[14-Apr-2019 20:35:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php:0
+[14-Apr-2019 20:36:32 UTC] PHP Fatal error:  Call to undefined method PDO::prepcare() in /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php on line 10
+[14-Apr-2019 20:36:32 UTC] PHP Stack trace:
+[14-Apr-2019 20:36:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php:0
+[14-Apr-2019 20:36:57 UTC] PHP Fatal error:  Call to undefined method PDO::prepcare() in /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php on line 10
+[14-Apr-2019 20:36:57 UTC] PHP Stack trace:
+[14-Apr-2019 20:36:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php:0
+[14-Apr-2019 20:36:58 UTC] PHP Fatal error:  Call to undefined method PDO::prepcare() in /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php on line 10
+[14-Apr-2019 20:36:58 UTC] PHP Stack trace:
+[14-Apr-2019 20:36:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php:0
+[14-Apr-2019 20:37:55 UTC] PHP Fatal error:  Call to undefined method PDO::prepcare() in /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php on line 10
+[14-Apr-2019 20:37:55 UTC] PHP Stack trace:
+[14-Apr-2019 20:37:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php:0
+[14-Apr-2019 20:38:17 UTC] PHP Fatal error:  Call to undefined method PDO::prepcare() in /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php on line 10
+[14-Apr-2019 20:38:17 UTC] PHP Stack trace:
+[14-Apr-2019 20:38:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php:0
+[14-Apr-2019 20:38:18 UTC] PHP Fatal error:  Call to undefined method PDO::prepcare() in /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php on line 10
+[14-Apr-2019 20:38:18 UTC] PHP Stack trace:
+[14-Apr-2019 20:38:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php:0
+[14-Apr-2019 20:38:30 UTC] PHP Fatal error:  Call to undefined method PDO::prepcare() in /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php on line 10
+[14-Apr-2019 20:38:30 UTC] PHP Stack trace:
+[14-Apr-2019 20:38:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php:0
+[14-Apr-2019 20:38:32 UTC] PHP Fatal error:  Call to undefined method PDO::prepcare() in /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php on line 10
+[14-Apr-2019 20:38:32 UTC] PHP Stack trace:
+[14-Apr-2019 20:38:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php:0
+[14-Apr-2019 20:42:27 UTC] PHP Fatal error:  Call to undefined method PDO::prepcare() in /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php on line 10
+[14-Apr-2019 20:42:27 UTC] PHP Stack trace:
+[14-Apr-2019 20:42:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/api/getProducts.php:0
