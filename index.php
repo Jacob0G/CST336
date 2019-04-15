@@ -29,9 +29,11 @@ echo "<a href = 'Practice/p5/index.html'>p5</a>";
 echo "<br /><br />";
 echo "<a href = 'Labs/lab5/index.html'>Lab5</a>";
 echo "<br /><br />";
-echo "<a href = 'Labs/lab6/index.html'>Lab4</a>";
+echo "<a href = 'Labs/lab6/index.html'>Lab6</a>";
 echo "<br /><br />";
-echo "<a href = 'Labs/lab7/login.php'>Lab4</a>";
+echo "<a href = 'Labs/lab7/login.php'>Lab7</a>";
+echo "<br /><br />";
+echo "<a href = '/CST336/phpMyAdmin/index.php'>DB</a>";
 echo "<br /><br />";
 ?>
 
