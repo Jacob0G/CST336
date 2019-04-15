@@ -25,11 +25,11 @@
                     </form>
                 </div>
                 
-                <div id="page1" class="allForm">  
+                <div id="page1" class="allForm">
                     <form class = "form">
-                    <input id="progress" name="progress" type="hidden" value=2 />
-                    Enter your major: <input type="text" id="name" name="major"/>
-                    Enter your zip: <input type="text" id="email" sname="zip"/>
+                    <input name="progress" type="hidden" value=2 />
+                    Enter your major: <input type="text" name="major"/>
+                    Enter your zip: <input type="text" name="zip"/>
                     <input class="button" type="submit" value="next" />
                   </form>
                 </div>
@@ -59,28 +59,19 @@
     //Function to call API to save data into Session
     function displayNextForm(element){
         
+       // alert("test")
         var array;
-        let progress;
-        let name;
-        let email;
         if (element!=null){
             array= element.serialize();
-            let URL = array.split("&")
-            progress = URL[0].split("=")[1];
-            name = URL[1].split("=")[1];
-            email = URL[2].split("=")[1];
         } else {
             array = {};
         }
         
          $.ajax({
-            type: "GET",
+            type: "post",
             url: "API/saveData.php",
             dataType: "json",
-            data: {'progress': progress,
-                    'name':name,
-                    'email':email,
-            },
+            data: array,
             success: function(data){
                
                 var htmlString="";
@@ -88,6 +79,7 @@
                     htmlString+= key+": "+ data[key]+"<br>";
                 }
                 $("#current").html(htmlString);
+                
                 $(".allForm").hide();
                 $("#page"+data["progress"]).show();
             },
@@ -104,9 +96,28 @@
      $('.form').submit (function (event) {
          event.preventDefault();
          var element = $(this);
-        //  alert($(this));
-         displayNextForm(element);
+        displayNextForm(element);
      }); 
+    
+    
+$( "#send" ).click(function() {
+        alert("test")
+ 
+         $.ajax({
+            type: "post",
+            url: "API/sendData.php",
+            dataType: "json",
+            success: function(data){
+               
+                
+            },
+            
+        });});
+    
+        
+    
+    
+    
     
    
 });
