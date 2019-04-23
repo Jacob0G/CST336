@@ -7,15 +7,22 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style>
+
 body {
-text-align: center;
+    background:url(https://live.staticflickr.com/5015/5474954487_c397803ca7_o_d.jpg) no-repeat center center fixed; 
+    background-size:cover;
+    text-align: center;
 }
+
 img {
     border-radius: 20px;
     padding:15px;
 }
 .favorite{
     cursor: pointer;
+}
+#images{
+    background-color:white;
 }
 </style>
 <script>
@@ -73,7 +80,6 @@ img {
                         "url": url,
                         "keyword": keyword, },
              success: function(data, status) {
-               alert("hello");
             }
             }); //ajax 
         

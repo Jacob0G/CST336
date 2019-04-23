@@ -1,6 +1,6 @@
 <?php
 include '../../../inc/dbConnection.php';
-$conn = getDatabaseConnection("heroku_a0456bbcdb0a1a4");
+$conn = getDatabaseConnection("c9");
 
 //receives these parameters: action, url, keyword
 $action = $_GET['action'];

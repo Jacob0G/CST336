@@ -268,3 +268,21 @@ Stack trace:
 #1 /home/ubuntu/workspace/CST336/HW/HW4/api/favoritesAPI.php(3): getDatabaseConnection('hw4_flick')
 #2 {main}
   thrown in /home/ubuntu/workspace/CST336/inc/dbConnection.php on line 18
+[23-Apr-2019 21:59:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_a0456bbcdb0a1a4'' in /home/ubuntu/workspace/CST336/inc/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/inc/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/CST336/HW/HW4/api/favoritesAPI.php(3): getDatabaseConnection('heroku_a0456bbc...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/inc/dbConnection.php on line 18
+[23-Apr-2019 21:59:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_a0456bbcdb0a1a4'' in /home/ubuntu/workspace/CST336/inc/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/inc/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/CST336/HW/HW4/api/getFavorites.php(3): getDatabaseConnection('heroku_a0456bbc...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/inc/dbConnection.php on line 18
+[23-Apr-2019 21:59:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_a0456bbcdb0a1a4'' in /home/ubuntu/workspace/CST336/inc/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/inc/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/CST336/HW/HW4/api/getFavorites.php(3): getDatabaseConnection('heroku_a0456bbc...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/inc/dbConnection.php on line 18
