@@ -1,0 +1,270 @@
+[17-Apr-2019 00:16:39 UTC] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/labs/lab8/api/pixabayProxy.php on line 37
+[17-Apr-2019 00:16:39 UTC] PHP Stack trace:
+[17-Apr-2019 00:16:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/api/pixabayProxy.php:0
+[17-Apr-2019 00:16:39 UTC] PHP   2. shuffle() /home/ubuntu/workspace/cst336/labs/lab8/api/pixabayProxy.php:37
+[19-Apr-2019 00:10:12 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 17
+[19-Apr-2019 00:10:12 UTC] PHP Stack trace:
+[19-Apr-2019 00:10:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:10:12 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:17
+[19-Apr-2019 00:10:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(21): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 21
+[19-Apr-2019 00:15:59 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 30
+[19-Apr-2019 00:15:59 UTC] PHP Stack trace:
+[19-Apr-2019 00:15:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:15:59 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:30
+[19-Apr-2019 00:15:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:34
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(34): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 34
+[19-Apr-2019 00:16:00 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 17
+[19-Apr-2019 00:16:00 UTC] PHP Stack trace:
+[19-Apr-2019 00:16:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:16:00 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:17
+[19-Apr-2019 00:16:00 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(21): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 21
+[19-Apr-2019 00:16:00 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 30
+[19-Apr-2019 00:16:00 UTC] PHP Stack trace:
+[19-Apr-2019 00:16:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:16:00 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:30
+[19-Apr-2019 00:16:00 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:34
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(34): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 34
+[19-Apr-2019 00:16:15 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 17
+[19-Apr-2019 00:16:15 UTC] PHP Stack trace:
+[19-Apr-2019 00:16:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:16:15 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:17
+[19-Apr-2019 00:16:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(21): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 21
+[19-Apr-2019 00:16:22 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 30
+[19-Apr-2019 00:16:22 UTC] PHP Stack trace:
+[19-Apr-2019 00:16:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:16:22 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:30
+[19-Apr-2019 00:16:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:34
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(34): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 34
+[19-Apr-2019 00:16:22 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 17
+[19-Apr-2019 00:16:22 UTC] PHP Stack trace:
+[19-Apr-2019 00:16:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:16:22 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:17
+[19-Apr-2019 00:16:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(21): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 21
+[19-Apr-2019 00:16:23 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 30
+[19-Apr-2019 00:16:23 UTC] PHP Stack trace:
+[19-Apr-2019 00:16:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:16:23 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:30
+[19-Apr-2019 00:16:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:34
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(34): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 34
+[19-Apr-2019 00:16:23 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 17
+[19-Apr-2019 00:16:23 UTC] PHP Stack trace:
+[19-Apr-2019 00:16:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:16:23 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:17
+[19-Apr-2019 00:16:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(21): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 21
+[19-Apr-2019 00:16:26 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 30
+[19-Apr-2019 00:16:26 UTC] PHP Stack trace:
+[19-Apr-2019 00:16:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:16:26 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:30
+[19-Apr-2019 00:16:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:34
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(34): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 34
+[19-Apr-2019 00:16:26 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 17
+[19-Apr-2019 00:16:26 UTC] PHP Stack trace:
+[19-Apr-2019 00:16:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:16:26 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:17
+[19-Apr-2019 00:16:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(21): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 21
+[19-Apr-2019 00:16:26 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 30
+[19-Apr-2019 00:16:26 UTC] PHP Stack trace:
+[19-Apr-2019 00:16:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:16:26 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:30
+[19-Apr-2019 00:16:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:34
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(34): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 34
+[19-Apr-2019 00:16:27 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 17
+[19-Apr-2019 00:16:27 UTC] PHP Stack trace:
+[19-Apr-2019 00:16:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:16:27 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:17
+[19-Apr-2019 00:16:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(21): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 21
+[19-Apr-2019 00:16:29 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 30
+[19-Apr-2019 00:16:29 UTC] PHP Stack trace:
+[19-Apr-2019 00:16:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:16:29 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:30
+[19-Apr-2019 00:16:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:34
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(34): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 34
+[19-Apr-2019 00:16:29 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 17
+[19-Apr-2019 00:16:29 UTC] PHP Stack trace:
+[19-Apr-2019 00:16:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:16:29 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:17
+[19-Apr-2019 00:16:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(21): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 21
+[19-Apr-2019 00:16:51 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 17
+[19-Apr-2019 00:16:51 UTC] PHP Stack trace:
+[19-Apr-2019 00:16:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:16:51 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:17
+[19-Apr-2019 00:16:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(21): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 21
+[19-Apr-2019 00:19:13 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 9
+[19-Apr-2019 00:19:13 UTC] PHP Stack trace:
+[19-Apr-2019 00:19:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[19-Apr-2019 00:19:13 UTC] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:9
+[18-Apr-2019 17:27:02 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(22): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 22
+[18-Apr-2019 17:27:58 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(22): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 22
+[18-Apr-2019 17:28:25 America/Los_Angeles] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 31
+[18-Apr-2019 17:28:25 America/Los_Angeles] PHP Stack trace:
+[18-Apr-2019 17:28:25 America/Los_Angeles] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[18-Apr-2019 17:28:25 America/Los_Angeles] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:31
+[18-Apr-2019 17:28:25 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(35): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 35
+[18-Apr-2019 17:28:41 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(22): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 22
+[18-Apr-2019 17:28:51 America/Los_Angeles] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 31
+[18-Apr-2019 17:28:51 America/Los_Angeles] PHP Stack trace:
+[18-Apr-2019 17:28:51 America/Los_Angeles] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:0
+[18-Apr-2019 17:28:51 America/Los_Angeles] PHP   2. date() /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:31
+[18-Apr-2019 17:28:51 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(35): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 35
+[18-Apr-2019 17:29:41 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(22): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 22
+[18-Apr-2019 17:31:03 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(22): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 22
+[18-Apr-2019 17:32:36 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(22): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 22
+[18-Apr-2019 17:32:56 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(22): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 22
+[18-Apr-2019 17:34:50 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(22): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 22
+[18-Apr-2019 17:36:40 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(22): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 22
+[18-Apr-2019 17:37:42 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(22): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 22
+[18-Apr-2019 17:38:37 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(22): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 22
+[18-Apr-2019 17:39:31 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(22): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 22
+[18-Apr-2019 17:41:47 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(22): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 22
+[18-Apr-2019 17:42:30 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php:34
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php(34): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Labs/lab8/api/favoritesAPI.php on line 34
+[23-Apr-2019 18:18:45 UTC] PHP Warning:  Illegal string offset 'photo' in /home/ubuntu/workspace/CST336/HW/HW4/api/pixabayProxy.php on line 33
+[23-Apr-2019 18:18:45 UTC] PHP Stack trace:
+[23-Apr-2019 18:18:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/HW/HW4/api/pixabayProxy.php:0
+[23-Apr-2019 18:18:54 UTC] PHP Warning:  Illegal string offset 'photo' in /home/ubuntu/workspace/CST336/HW/HW4/api/pixabayProxy.php on line 33
+[23-Apr-2019 18:18:54 UTC] PHP Stack trace:
+[23-Apr-2019 18:18:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/HW/HW4/api/pixabayProxy.php:0
+[23-Apr-2019 18:19:05 UTC] PHP Warning:  Illegal string offset 'photo' in /home/ubuntu/workspace/CST336/HW/HW4/api/pixabayProxy.php on line 33
+[23-Apr-2019 18:19:05 UTC] PHP Stack trace:
+[23-Apr-2019 18:19:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/HW/HW4/api/pixabayProxy.php:0
+[23-Apr-2019 18:19:18 UTC] PHP Warning:  Illegal string offset 'photo' in /home/ubuntu/workspace/CST336/HW/HW4/api/pixabayProxy.php on line 33
+[23-Apr-2019 18:19:18 UTC] PHP Stack trace:
+[23-Apr-2019 18:19:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/HW/HW4/api/pixabayProxy.php:0
+[23-Apr-2019 19:36:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'hw4_flick'' in /home/ubuntu/workspace/CST336/inc/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/inc/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/CST336/HW/HW4/api/favoritesAPI.php(3): getDatabaseConnection('hw4_flick')
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/inc/dbConnection.php on line 18
+[23-Apr-2019 19:37:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'hw4_flick'' in /home/ubuntu/workspace/CST336/inc/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/inc/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/CST336/HW/HW4/api/favoritesAPI.php(3): getDatabaseConnection('hw4_flick')
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/inc/dbConnection.php on line 18
+[23-Apr-2019 19:39:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'hw4_flick'' in /home/ubuntu/workspace/CST336/inc/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/inc/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/CST336/HW/HW4/api/favoritesAPI.php(3): getDatabaseConnection('hw4_flick')
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/inc/dbConnection.php on line 18

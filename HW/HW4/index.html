@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Pixabay API Demo </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+body {
+text-align: center;
+}
+img {
+    border-radius: 20px;
+    padding:15px;
+}
+.favorite{
+    cursor: pointer;
+    background-color:transparent;
+}
+</style>
+<script>
+
+    function searchImage() {
+    
+        $("#images").html("Loading...");
+ 
+        $.ajax({
+             method: "GET",
+                url: "api/flickrProxy.php",
+            dataType: "json",
+                data: { "keyword":$("#keyword").val() },
+             success: function(data, status) {
+               
+                let htmlString = "";
+                let i = 0;
+                $("#images").html("");
+                for (let rows=0; rows < 3; rows++) {
+                    
+                    htmlString += "<div class='row'>";
+                    
+                    for (let cols=0; cols < 3; cols++) {
+                        
+                      htmlString +=  "<a class='favorite glyphicon glyphicon-heart-empty'></a>";
+                      htmlString +=  "<img src='"+ data[i++]+"' width='300' height='280'>";
+                        
+                    }//for
+                    
+                    htmlString += "</div>";
+                    
+                }//for
+               
+              $("#images").append(htmlString);
+               
+            }
+        }); //ajax 
+        
+    }//searchImage()
+    
+    
+    $(document).ready(function(){
+        
+        $("#images").on("click", ".favorite", function(){ 
+            
+           if(this.classList.contains('glyphicon-heart-empty') == true){
+                $(this).toggleClass('glyphicon-heart-empty').toggleClass('glyphicon-heart');
+                //add image url to database
+                callFavoriteAPI("add", $(this).next().attr("src"), $("#keyword").val());
+           }
+           else {
+                $(this).toggleClass('glyphicon-heart').toggleClass('glyphicon-heart-empty');
+                //remove image url from database
+                callFavoriteAPI("delete",$(this).next().attr("src"),$("#keyword").val());
+            }
+        });
+    
+        
+        function callFavoriteAPI(action, url, keyword) {
+            
+            $.ajax({
+             method: "GET",
+                url: "api/favoritesAPI.php",
+            dataType: "json",
+                data: { "action": action,
+                        "url": url,
+                        "keyword": keyword, },
+             success: function(data, status) {
+               alert("hello");
+            }
+            }); //ajax 
+        
+        }
+    
+        
+    });//documentReady
+
+</script>
+</head>
+<body>
+
+<h1> Flickr Image Search </h1>
+<a class="savedFavorites" href="savedFavorites.php">Favorite Photos</a>
+Keyword: <input type="text" id="keyword"/> 
+<button onclick="searchImage()"> Search </button>
+<br /><br />
+
+<div id="images"></div>
+
+</body>
+</html>
