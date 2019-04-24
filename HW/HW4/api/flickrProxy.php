@@ -20,12 +20,11 @@ $err = curl_error($curl);
 curl_close($curl);
 
 $data = json_decode($jsonData, true);  //from JSON format to an Array
-
 // print_r($data['photos']['photo']);
 
 $imageURLs = array();
 
-for ($i = 5; $i < 15; $i++) {
+for ($i = 0; $i < 15; $i++) {
   
    $keyword = $data['photos']['photo'][$i]['id'];
    // print_r($keyword);
@@ -49,7 +48,7 @@ $imageData = json_decode($jsonData, true);  //from JSON format to an Array
 array_push($imageURLs,$imageData['sizes']['size'][3]['source']);
 }
 
-shuffle($imageURLs);
+// shuffle($imageURLs);
 
 echo json_encode(array_slice($imageURLs, 0, 9)); 
 
