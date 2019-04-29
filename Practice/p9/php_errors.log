@@ -1,0 +1,148 @@
+[29-Apr-2019 19:40:53 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 9
+[29-Apr-2019 19:41:25 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 9
+[29-Apr-2019 19:41:27 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 9
+[29-Apr-2019 19:41:30 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 9
+[29-Apr-2019 19:42:33 UTC] PHP Warning:  include(../../db/db_connection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 13
+[29-Apr-2019 19:42:33 UTC] PHP Stack trace:
+[29-Apr-2019 19:42:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:0
+[29-Apr-2019 19:42:33 UTC] PHP Warning:  include(): Failed opening '../../db/db_connection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 13
+[29-Apr-2019 19:42:33 UTC] PHP Stack trace:
+[29-Apr-2019 19:42:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:0
+[29-Apr-2019 19:42:33 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 15
+[29-Apr-2019 19:42:33 UTC] PHP Stack trace:
+[29-Apr-2019 19:42:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:0
+[29-Apr-2019 19:43:04 UTC] PHP Warning:  include(db_connection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 13
+[29-Apr-2019 19:43:04 UTC] PHP Stack trace:
+[29-Apr-2019 19:43:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:0
+[29-Apr-2019 19:43:04 UTC] PHP Warning:  include(): Failed opening 'db_connection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 13
+[29-Apr-2019 19:43:04 UTC] PHP Stack trace:
+[29-Apr-2019 19:43:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:0
+[29-Apr-2019 19:43:04 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 15
+[29-Apr-2019 19:43:04 UTC] PHP Stack trace:
+[29-Apr-2019 19:43:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:0
+[29-Apr-2019 19:43:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:30
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(30): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 30
+[29-Apr-2019 19:44:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(23): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 23
+[29-Apr-2019 19:45:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:26
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(26): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 26
+[29-Apr-2019 19:45:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:26
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(26): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 26
+[29-Apr-2019 19:45:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:32
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(32): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 32
+[29-Apr-2019 19:46:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'email' cannot be null' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:32
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(32): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 32
+[29-Apr-2019 19:46:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'email' cannot be null' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:33
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(33): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 33
+[29-Apr-2019 19:47:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'email' cannot be null' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:32
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(32): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 32
+[29-Apr-2019 19:52:26 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 3
+[29-Apr-2019 19:52:26 UTC] PHP Stack trace:
+[29-Apr-2019 19:52:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:0
+[29-Apr-2019 19:52:29 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 3
+[29-Apr-2019 19:52:29 UTC] PHP Stack trace:
+[29-Apr-2019 19:52:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:0
+[29-Apr-2019 19:54:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'algoodwin@csumb.edu' for key 'PRIMARY'' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(19): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 19
+[29-Apr-2019 19:54:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'algoodwin@csumb.edu' for key 'PRIMARY'' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(20): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 20
+[29-Apr-2019 19:55:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'algoodwin@csumb.edu' for key 'PRIMARY'' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 28
+[29-Apr-2019 19:55:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'algoodwin@csumb.edu' for key 'PRIMARY'' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 28
+[29-Apr-2019 19:55:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'algoodwin@csumb.edu' for key 'PRIMARY'' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(29): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 29
+[29-Apr-2019 19:56:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'algoodwin@csumb.edu' for key 'PRIMARY'' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(29): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 29
+[29-Apr-2019 19:57:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(20): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 20
+[29-Apr-2019 19:57:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(20): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 20
+[29-Apr-2019 19:57:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(20): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 20
+[29-Apr-2019 19:58:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(20): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 20
+[29-Apr-2019 19:58:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(20): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 20
+[29-Apr-2019 19:59:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(21): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 21
+[29-Apr-2019 19:59:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(21): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 21
+[29-Apr-2019 20:02:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:30
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(30): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 30
+[29-Apr-2019 20:11:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(23): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 23
+[29-Apr-2019 20:12:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php(23): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/Practice/p9/api/checkAnswer.php on line 23
