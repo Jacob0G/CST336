@@ -1,13 +1,14 @@
 <?php
-
  if (!empty($_FILES)) {
 
-    print_r($_FILES);
+    // print_r($_FILES);
     
-    echo "Image size: " . $_FILES['myFile']['size'];
-    
-    move_uploaded_file( $_FILES['myFile']['tmp_name'], "gallery/" . $_FILES['myFile']['name']);
-
+    if( $_FILES['myFile']['size'] < 125000){
+        echo "Image size: " . $_FILES['myFile']['size'];
+        move_uploaded_file( $_FILES['myFile']['tmp_name'], "gallery/" . $_FILES['myFile']['name']);
+    }else{
+        echo "file too big!";
+    }
 }
 
 
@@ -56,12 +57,5 @@
         
         <?= displayImagesUploaded() ?>
         
-        
-        <?php
-        
-        
-        $conn = dbConnection();
-        
-        ?>
     </body>
 </html>
