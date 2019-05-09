@@ -6,16 +6,16 @@ if (!isset($_SESSION['adminName'])) {
     header('location: login.php'); //sends users to login screen if they haven't logged in
 }
 
-    include '../../inc/dbConnection.php';
-    $conn = getDatabaseConnection("ottermart");
+include '../../inc/dbConnection.php';
+$conn = getDatabaseConnection("ottermart");
 
-    $sql = "DELETE FROM `om_product` WHERE `om_product`.`productId` = " . $_POST['productId'];
-    $stmt = $conn->prepare($sql);
-    $stmt->execute();
+$sql = "DELETE FROM `om_product` WHERE `om_product`.`productId` = " . $_POST['productId'];
+$stmt = $conn->prepare($sql);
+$stmt->execute();
     
-   // echo $sql;
+// echo $sql;
     
-    header("Location: admin.php");
+header("Location: admin.php");
 
 
 

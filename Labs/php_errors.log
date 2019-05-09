@@ -22,3 +22,22 @@ Stack trace:
 [14-Apr-2019 20:07:41 UTC] PHP Notice:  Undefined index: password in /home/ubuntu/workspace/CST336/Labs/lab7/loginProcess.php on line 14
 [14-Apr-2019 20:07:41 UTC] PHP Stack trace:
 [14-Apr-2019 20:07:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab7/loginProcess.php:0
+[06-May-2019 18:49:39 UTC] PHP Warning:  filesize() expects parameter 1 to be a valid path, array given in /home/ubuntu/workspace/CST336/Labs/lab9/index.php on line 2
+[06-May-2019 18:49:39 UTC] PHP Stack trace:
+[06-May-2019 18:49:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab9/index.php:0
+[06-May-2019 18:49:39 UTC] PHP   2. filesize() /home/ubuntu/workspace/CST336/Labs/lab9/index.php:2
+[06-May-2019 18:49:39 UTC] PHP Fatal error:  Call to undefined function dbConnection() in /home/ubuntu/workspace/CST336/Labs/lab9/index.php on line 63
+[06-May-2019 18:49:39 UTC] PHP Stack trace:
+[06-May-2019 18:49:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab9/index.php:0
+[06-May-2019 18:50:09 UTC] PHP Fatal error:  Call to undefined function dbConnection() in /home/ubuntu/workspace/CST336/Labs/lab9/index.php on line 63
+[06-May-2019 18:50:09 UTC] PHP Stack trace:
+[06-May-2019 18:50:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab9/index.php:0
+[06-May-2019 18:50:12 UTC] PHP Fatal error:  Call to undefined function dbConnection() in /home/ubuntu/workspace/CST336/Labs/lab9/index.php on line 63
+[06-May-2019 18:50:12 UTC] PHP Stack trace:
+[06-May-2019 18:50:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab9/index.php:0
+[06-May-2019 18:50:29 UTC] PHP Fatal error:  Call to undefined function dbConnection() in /home/ubuntu/workspace/CST336/Labs/lab9/index.php on line 63
+[06-May-2019 18:50:29 UTC] PHP Stack trace:
+[06-May-2019 18:50:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab9/index.php:0
+[06-May-2019 18:53:15 UTC] PHP Fatal error:  Call to undefined function dbConnection() in /home/ubuntu/workspace/CST336/Labs/lab9/index.php on line 62
+[06-May-2019 18:53:15 UTC] PHP Stack trace:
+[06-May-2019 18:53:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/Labs/lab9/index.php:0
