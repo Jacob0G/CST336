@@ -7,7 +7,7 @@ include '../inc/dbConnection.php';
 $conn = getDatabaseConnection("finalProject");
 
 $username = $_POST['username'];
-$password = sha1($_POST['password']);
+$password = $_POST['password'];
 
 $sql = "SELECT * FROM fp_admins WHERE username = :username AND password = :password";
 
