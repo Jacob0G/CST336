@@ -4,8 +4,8 @@
     $namedParameter = array();
     
     $namedParameter[":user"] = $_GET['user'];
-    $namedParameter[":pass"] = $_GET['pass'];
-    $namedParameter[":name"] = sha1($_GET['name']);
+    $namedParameter[":pass"] = sha1($_GET['pass']);
+    $namedParameter[":name"] = $_GET['name'];
     $namedParameter[":email"] = $_GET['email'];
     // print_r($namedParameter);
     $sql = "INSERT INTO `fp_users` (`username`, `password`, `fullname`, `email`) 
