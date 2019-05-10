@@ -7,7 +7,7 @@ include '../inc/dbConnection.php';
 $conn = getDatabaseConnection("finalProject");
 
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password = sha1($_POST['password']);
 
 $sql = "SELECT * FROM fp_admins WHERE username = :username AND password = :password";
 
@@ -28,7 +28,7 @@ $record = $stmt->fetch(PDO::FETCH_ASSOC); //we are expecting ONLY one record, so
 else{
  
  $sql = "SELECT * FROM fp_users WHERE username = :username AND password = :password";
- $namedParameters[':password'] = sha1($_POST['password']);
+ $namedParameters[':password'] = $_POST['password'];
  $stmt = $conn->prepare($sql);
  $stmt->execute($namedParameters);
  $userRecord= $stmt->fetch(PDO::FETCH_ASSOC); //we are expecting ONLY one record, so we use fetch instead of fetchAll

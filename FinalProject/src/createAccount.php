@@ -142,9 +142,9 @@
                               }
                               else {
                                 alert("Your account created successfully");
-                                window.location.href = "../src/login.php";
+                                window.location.href = "/../src/login.php"
                               }
-                             // window.location.href = "../src/login.php"
+                             // window.location.href = "/cst336finalProject/src/login.php"
                             //alert(data);
                             },
                             complete: function(data,status) { //optional, used for debugging purposes
